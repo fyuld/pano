@@ -1,0 +1,52 @@
+{
+  "name": "@fyuld/pano-cli",
+  "version": "0.1.0",
+  "description": "CLI for Pan Opticum",
+  "main": "dist/pano.js",
+  "bin": {
+    "pano": "dist/pano.js"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run checks && npm run tsc",
+    "pub": "npm run build && npm publish",
+    "tsc": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "checks": "npm run test && npm run format",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json}\"",
+    "try:analyze": "npx ts-node src/pano.ts analyze",
+    "try:assess": "npx ts-node src/pano.ts assess",
+    "try:run": "npx ts-node src/pano.ts run",
+    "try:taskify": "npx ts-node src/pano.ts taskify",
+    "try:clean": "npx ts-node src/pano.ts clean"
+  },
+  "devDependencies": {
+    "@fyuld/jest-cucumber-utils": "^1.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.5.2",
+    "jest": "^30.1.3",
+    "jest-cucumber": "^4.5.0",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.2",
+    "typescript": "^5.9.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@fyuld/ldm": "^0.1.13",
+    "@fyuld/mdad": "^0.8.0",
+    "@fyuld/pano": "^0.1.9",
+    "@fyuld/pano-bdd": "^0.1.2",
+    "@fyuld/pano-dm": "^0.3.2"
+  }
+}

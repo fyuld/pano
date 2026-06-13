@@ -1,0 +1,4 @@
+name,kind,file,line,code,package,language
+generateBddStepsForUx,function,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,8,export function generateBddStepsForUx(featureContent: string): string {,fyuld-pano-bdd,typescript
+safelyOverwriteFile,function,fyuld-pano-cli/src/safely-overwrite-file.ts,5,export async function safelyOverwriteFile(,fyuld-pano-cli,typescript
+record,function,fyuld-pano-optics/src/record.ts,1,export function record(message: string): void {,fyuld-pano-optics,typescript

@@ -1,0 +1,3 @@
+label,file,line,instantiation,inheritancePath,package,language
+ConfigError,fyuld-pano-cli/src/pano.ts,99,factory,ConfigError;FyuldError;Error,fyuld-pano-cli,typescript
+FindingError,fyuld-pano-cli/src/write-findings.ts,22,factory,FindingError;FyuldError;Error,fyuld-pano-cli,typescript

@@ -1,0 +1,16 @@
+[
+  {
+    "remarkId": 1,
+    "principle": "Clear Conditional Purpose",
+    "points": 20,
+    "kind": "if",
+    "condition": "1 === 1 && 2 === 2",
+    "numTerms": 2,
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts",
+    "line": 8,
+    "code": "if (1 === 1 && 2 === 2) {",
+    "package": "fyuld-pano",
+    "language": "typescript",
+    "lineContent": "if (1 === 1 && 2 === 2) {"
+  }
+]

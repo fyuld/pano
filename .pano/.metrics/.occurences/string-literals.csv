@@ -1,0 +1,62 @@
+value,name,type,length,usage,file,line,code,package,language
+'.ts',endsWith,string,3,function,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,28,if (!file.endsWith('.ts')) continue,fyuld-pano,typescript
+'if',push,string,2,function,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,57,push('if', node, node.expression),fyuld-pano,typescript
+'switch',push,string,6,function,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,59,push('switch', node, node.expression),fyuld-pano,typescript
+'ternary',push,string,7,function,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,61,push('ternary', node, node.condition),fyuld-pano,typescript
+'Math works!',log,string,11,function,fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts,9,console.log('Math works!'),fyuld-pano,typescript
+'.tf',endsWith,string,3,function,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,32,if (file.endsWith('.tf')) {,fyuld-pano,typescript
+'function',push,string,8,function,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,69,push(declaration.name!.text, 'function', declaration),fyuld-pano,typescript
+'class',push,string,5,function,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,71,push(declaration.name!.text, 'class', declaration),fyuld-pano,typescript
+'type',push,string,4,function,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,73,push(declaration.name.text, 'type', declaration),fyuld-pano,typescript
+'interface',push,string,9,function,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,75,push(declaration.name.text, 'interface', declaration),fyuld-pano,typescript
+'fixture',includes,string,7,function,fyuld-pano/src/assessments/fixture-files/scan-fixture-files.ts,7,if (!file.toLowerCase().includes('fixture')) continue,fyuld-pano,typescript
+'${',includes,string,2,function,fyuld-pano/src/languages/terraform/parser.ts,76,match !== null && !match[2].includes('${'),fyuld-pano,typescript
+'.tsx',endsWith,string,4,function,fyuld-pano/src/languages/typescript/parser.ts,4,if (fileName.endsWith('.tsx')) return ts.ScriptKind.TSX,fyuld-pano,typescript
+'.jsx',endsWith,string,4,function,fyuld-pano/src/languages/typescript/parser.ts,5,if (fileName.endsWith('.jsx')) return ts.ScriptKind.JSX,fyuld-pano,typescript
+'.js',endsWith,string,3,function,fyuld-pano/src/languages/typescript/parser.ts,6,if (fileName.endsWith('.js')) return ts.ScriptKind.JS,fyuld-pano,typescript
+'input.ts',fileName,string,8,default,fyuld-pano/src/languages/typescript/parser.ts,12,fileName = 'input.ts',fyuld-pano,typescript
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,8,`| ${cols.join(' | ')} |`,,fyuld-pano,typescript
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,9,`| ${cols.map(() => '---').join(' | ')} |`,,fyuld-pano,typescript
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,10,...rows.map((row) => `| ${cols.map((c) => cell(row[c])).join(' | ')} |`),,fyuld-pano,typescript
+'\`',replace,string,2,function,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,42,) => `${s.kind}(\`${s.text.replace(/`/g, "\\`")}\`, async ({ page }) => {,fyuld-pano-bdd,typescript
+'..',join,string,2,function,fyuld-pano-cli/src/compile-principle.ts,9,path.join(__dirname, '..', 'schemas', 'principle.mdschema.json'),,fyuld-pano-cli,typescript
+'schemas',join,string,7,function,fyuld-pano-cli/src/compile-principle.ts,9,path.join(__dirname, '..', 'schemas', 'principle.mdschema.json'),,fyuld-pano-cli,typescript
+'principle.mdschema.json',join,string,23,function,fyuld-pano-cli/src/compile-principle.ts,9,path.join(__dirname, '..', 'schemas', 'principle.mdschema.json'),,fyuld-pano-cli,typescript
+'.pano/pano.config.json',CONFIG_FILENAME,string,22,variable,fyuld-pano-cli/src/pano.ts,33,const CONFIG_FILENAME = '.pano/pano.config.json',fyuld-pano-cli,typescript
+'.metrics',METRICS_DIR,string,8,variable,fyuld-pano-cli/src/pano.ts,34,const METRICS_DIR = '.metrics',fyuld-pano-cli,typescript
+'.occurences',join,string,11,function,fyuld-pano-cli/src/pano.ts,35,const OCCURRENCES_DIR = path.join(METRICS_DIR, '.occurences'),fyuld-pano-cli,typescript
+'.findings',join,string,9,function,fyuld-pano-cli/src/pano.ts,36,const FINDINGS_DIR = path.join(METRICS_DIR, '.findings'),fyuld-pano-cli,typescript
+'.remarks',join,string,8,function,fyuld-pano-cli/src/pano.ts,37,const REMARKS_DIR = path.join(METRICS_DIR, '.remarks'),fyuld-pano-cli,typescript
+'.tasks',TASKS_DIR,string,6,variable,fyuld-pano-cli/src/pano.ts,38,const TASKS_DIR = '.tasks',fyuld-pano-cli,typescript
+'specs',DefaultSpecsDirectory,string,5,variable,fyuld-pano-cli/src/pano.ts,39,const DefaultSpecsDirectory = 'specs',fyuld-pano-cli,typescript
+'features',DefaultBddFeaturesDirectory,string,8,variable,fyuld-pano-cli/src/pano.ts,40,const DefaultBddFeaturesDirectory = 'features',fyuld-pano-cli,typescript
+'stories',DefaultStoriesDirectory,string,7,variable,fyuld-pano-cli/src/pano.ts,41,const DefaultStoriesDirectory = 'stories',fyuld-pano-cli,typescript
+'.feature',DefaultBddFeatureExtension,string,8,variable,fyuld-pano-cli/src/pano.ts,42,const DefaultBddFeatureExtension = '.feature',fyuld-pano-cli,typescript
+'principles',DefaultPrinciplesDirectory,string,10,variable,fyuld-pano-cli/src/pano.ts,43,const DefaultPrinciplesDirectory = 'principles',fyuld-pano-cli,typescript
+'.compiled-principles',DefaultCompiledPrinciplesDirectory,string,20,variable,fyuld-pano-cli/src/pano.ts,44,const DefaultCompiledPrinciplesDirectory = '.compiled-principles',fyuld-pano-cli,typescript
+'.*',replace,string,2,function,fyuld-pano-cli/src/pano.ts,60,const regex = new RegExp('^' + part.replace(/\*/g, '.*') + '$'),fyuld-pano-cli,typescript
+'--',startsWith,string,2,function,fyuld-pano-cli/src/pano.ts,255,if (a.startsWith('--')) {,fyuld-pano-cli,typescript
+'.ts',endsWith,string,3,function,fyuld-pano-cli/src/pano.ts,291,if (!file.endsWith('.ts')) continue,fyuld-pano-cli,typescript
+'.steps.ts',replace,string,9,function,fyuld-pano-cli/src/pano.ts,328,'.steps.ts',fyuld-pano-cli,typescript
+'.ts',endsWith,string,3,function,fyuld-pano-cli/src/pano.ts,358,} else if (inputPath.endsWith('.ts')) {,fyuld-pano-cli,typescript
+'.ts',basename,string,3,function,fyuld-pano-cli/src/pano.ts,359,const base = path.basename(inputPath, '.ts'),fyuld-pano-cli,typescript
+'# Principle — ',startsWith,string,14,function,fyuld-pano-cli/src/render-markdown-ansi.ts,43,if (line.startsWith('# Principle — ')) {,fyuld-pano-cli,typescript
+'### ',startsWith,string,4,function,fyuld-pano-cli/src/render-markdown-ansi.ts,52,if (line.startsWith('### ')) {,fyuld-pano-cli,typescript
+'**',startsWith,string,2,function,fyuld-pano-cli/src/render-markdown-ansi.ts,83,const isBoldKeyValueLine = line.startsWith('**') && line.includes(':**'),fyuld-pano-cli,typescript
+':**',includes,string,3,function,fyuld-pano-cli/src/render-markdown-ansi.ts,83,const isBoldKeyValueLine = line.startsWith('**') && line.includes(':**'),fyuld-pano-cli,typescript
+':**',indexOf,string,3,function,fyuld-pano-cli/src/render-markdown-ansi.ts,85,const colonIdx = line.indexOf(':**'),fyuld-pano-cli,typescript
+'Remarks:',styled,string,8,function,fyuld-pano-cli/src/render-markdown-ansi.ts,97,console.log(`  ${styled('1', 'Remarks:')}`),fyuld-pano-cli,typescript
+'- ',startsWith,string,2,function,fyuld-pano-cli/src/render-markdown-ansi.ts,102,if (line.startsWith('- ')) {,fyuld-pano-cli,typescript
+'90',styled,string,2,function,fyuld-pano-cli/src/render-markdown-ansi.ts,111,const dimLoc = styled('90', loc),fyuld-pano-cli,typescript
+'---',push,string,3,function,fyuld-pano-cli/src/render-run-report.ts,102,blocks.push('---'),fyuld-pano-cli,typescript
+'
+
+',join,string,2,function,fyuld-pano-cli/src/render-run-report.ts,122,return blocks.join('\n\n') + '\n',fyuld-pano-cli,typescript
+'remarks.json',join,string,12,function,fyuld-pano-cli/src/write-remarks.ts,12,fs.writeFileSync(path.join(outDir, 'remarks.json'), renderJson(remarks)),fyuld-pano-cli,typescript
+'remarks.csv',join,string,11,function,fyuld-pano-cli/src/write-remarks.ts,13,fs.writeFileSync(path.join(outDir, 'remarks.csv'), renderCsv(remarks)),fyuld-pano-cli,typescript
+'remarks.md',join,string,10,function,fyuld-pano-cli/src/write-remarks.ts,14,fs.writeFileSync(path.join(outDir, 'remarks.md'), markdown),fyuld-pano-cli,typescript
+'not-applicable',NotApplicable,string,14,variable,fyuld-pano-dm/src/entities/common.ts,1,export const NotApplicable = 'not-applicable',fyuld-pano-dm,typescript
+'Error',endsWith,string,5,function,fyuld-pano-errors/src/error-declarations.ts,12,const nameLooksLikeError = (name: string): boolean => name.endsWith("Error");,fyuld-pano-errors,typescript
+'__',startsWith,string,2,function,fyuld-pano-errors/src/errors.ts,84,if (name.startsWith("__")) return undefined;,fyuld-pano-errors,typescript
+'extends-error',addReason,string,13,function,fyuld-pano-errors/src/errors.ts,140,addReason(entry, "extends-error");,fyuld-pano-errors,typescript
+'thrown',addReason,string,6,function,fyuld-pano-errors/src/errors.ts,158,addReason(entry, "thrown");,fyuld-pano-errors,typescript

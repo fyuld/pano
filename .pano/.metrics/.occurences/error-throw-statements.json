@@ -1,0 +1,28 @@
+[
+  {
+    "label": "ConfigError",
+    "file": "fyuld-pano-cli/src/pano.ts",
+    "line": 99,
+    "instantiation": "factory",
+    "inheritancePath": [
+      "ConfigError",
+      "FyuldError",
+      "Error"
+    ],
+    "package": "fyuld-pano-cli",
+    "language": "typescript"
+  },
+  {
+    "label": "FindingError",
+    "file": "fyuld-pano-cli/src/write-findings.ts",
+    "line": 22,
+    "instantiation": "factory",
+    "inheritancePath": [
+      "FindingError",
+      "FyuldError",
+      "Error"
+    ],
+    "package": "fyuld-pano-cli",
+    "language": "typescript"
+  }
+]

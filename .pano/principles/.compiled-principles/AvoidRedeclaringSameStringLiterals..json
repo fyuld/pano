@@ -1,0 +1,16 @@
+{
+  "name": "Avoid Redeclaring Same String Literals",
+  "preferences": {
+    "points": 1,
+    "qualityCriteria": [
+      "Readability"
+    ]
+  },
+  "description": "String literals used in more than one place should be extracted into named constants.",
+  "purpose": "Repeated string values scatter intent across the codebase and make renaming error-prone.",
+  "implementation": "Extract any string literal that appears more than once into a named constant in a shared module.\n\nAlternatively suggest to user that they might be extracted to datamodel, config, or other place.",
+  "defaultAgentRecommendation": "None at the moment.",
+  "constraints": [
+    "$.duplicateStringLiterals[?(@.length > 3)]"
+  ]
+}

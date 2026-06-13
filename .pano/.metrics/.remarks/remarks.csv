@@ -1,0 +1,2 @@
+remarkId,principle,points,kind,condition,numTerms,file,line,code,package,language,lineContent
+1,Clear Conditional Purpose,20,if,1 === 1 && 2 === 2,2,fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts,8,if (1 === 1 && 2 === 2) {,fyuld-pano,typescript,if (1 === 1 && 2 === 2) {

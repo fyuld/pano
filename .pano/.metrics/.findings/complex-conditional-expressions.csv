@@ -1,0 +1,2 @@
+kind,condition,numTerms,file,line,code,package,language
+if,1 === 1 && 2 === 2,2,fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts,8,if (1 === 1 && 2 === 2) {,fyuld-pano,typescript

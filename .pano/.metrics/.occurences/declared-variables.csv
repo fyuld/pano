@@ -1,0 +1,3 @@
+name,kind,file,line,code,package,language
+usePretty,variable,fyuld-pano-cli/src/format.ts,1,let usePretty = true,fyuld-pano-cli,typescript
+plainFormatting,variable,fyuld-pano-cli/src/pano.ts,252,let plainFormatting = false,fyuld-pano-cli,typescript

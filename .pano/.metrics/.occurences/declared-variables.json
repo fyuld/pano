@@ -1,0 +1,20 @@
+[
+  {
+    "name": "usePretty",
+    "kind": "variable",
+    "file": "fyuld-pano-cli/src/format.ts",
+    "line": 1,
+    "code": "let usePretty = true",
+    "package": "fyuld-pano-cli",
+    "language": "typescript"
+  },
+  {
+    "name": "plainFormatting",
+    "kind": "variable",
+    "file": "fyuld-pano-cli/src/pano.ts",
+    "line": 252,
+    "code": "let plainFormatting = false",
+    "package": "fyuld-pano-cli",
+    "language": "typescript"
+  }
+]

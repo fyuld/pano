@@ -1,0 +1,281 @@
+[
+  {
+    "name": "FindingBucket",
+    "kind": "type",
+    "file": "fyuld-pano/src/assessments/collect-findings.ts",
+    "line": 6,
+    "code": "export type FindingBucket = { key: string; file: string; findings: Finding[] }",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "FindingSpec",
+    "kind": "type",
+    "file": "fyuld-pano/src/assessments/collect-findings.ts",
+    "line": 8,
+    "code": "type FindingSpec = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "OccurrenceBucket",
+    "kind": "type",
+    "file": "fyuld-pano/src/assessments/collect-occurrences.ts",
+    "line": 11,
+    "code": "export type OccurrenceBucket = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DeclarationKind",
+    "kind": "type",
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts",
+    "line": 8,
+    "code": "type DeclarationKind =",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "ScannedRow",
+    "kind": "type",
+    "file": "fyuld-pano/src/assessments/scanned-row.ts",
+    "line": 3,
+    "code": "export type ScannedRow = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "TerraformDeclaration",
+    "kind": "type",
+    "file": "fyuld-pano/src/languages/terraform/parser.ts",
+    "line": 1,
+    "code": "export type TerraformDeclaration = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "TerraformStringLiteral",
+    "kind": "type",
+    "file": "fyuld-pano/src/languages/terraform/parser.ts",
+    "line": 8,
+    "code": "export type TerraformStringLiteral = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "Comment",
+    "kind": "type",
+    "file": "fyuld-pano/src/languages/typescript/comments.ts",
+    "line": 3,
+    "code": "export type Comment = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "PrincipleVerdict",
+    "kind": "type",
+    "file": "fyuld-pano/src/principles/run-principles.ts",
+    "line": 5,
+    "code": "export type PrincipleVerdict = {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "ViolationRow",
+    "kind": "type",
+    "file": "fyuld-pano/src/principles/violation-to-be-renamed-to-remark.ts",
+    "line": 3,
+    "code": "export type ViolationRow = Finding",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "StepKind",
+    "kind": "type",
+    "file": "fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts",
+    "line": 1,
+    "code": "type StepKind = \"Given\" | \"When\" | \"Then\";",
+    "package": "fyuld-pano-bdd",
+    "language": "typescript"
+  },
+  {
+    "name": "CompiledPrinciple",
+    "kind": "type",
+    "file": "fyuld-pano-cli/src/principles-compile.ts",
+    "line": 7,
+    "code": "export type CompiledPrinciple = {",
+    "package": "fyuld-pano-cli",
+    "language": "typescript"
+  },
+  {
+    "name": "PrincipleValidation",
+    "kind": "type",
+    "file": "fyuld-pano-cli/src/principles-verify.ts",
+    "line": 7,
+    "code": "export type PrincipleValidation = {",
+    "package": "fyuld-pano-cli",
+    "language": "typescript"
+  },
+  {
+    "name": "ObservedDirectories",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/config/PanOpticumConfig.ts",
+    "line": 3,
+    "code": "export type ObservedDirectories = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "PanOpticumConfig",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/config/PanOpticumConfig.ts",
+    "line": 8,
+    "code": "export type PanOpticumConfig = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "NotApplicable",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/common.ts",
+    "line": 2,
+    "code": "export type NotApplicable = typeof NotApplicable",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "Finding",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/finding.ts",
+    "line": 4,
+    "code": "export type Finding = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "BehaviorScanner",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/finding.ts",
+    "line": 12,
+    "code": "export type BehaviorScanner = (occurrences: Occurrence[]) => Finding[]",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "Occurrence",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/occurrence.ts",
+    "line": 3,
+    "code": "export type Occurrence = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "CodeScanner",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/occurrence.ts",
+    "line": 11,
+    "code": "export type CodeScanner<Ast> = (ast: Ast) => Occurrence[]",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "QualityCriteria",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/principle.ts",
+    "line": 1,
+    "code": "export type QualityCriteria =",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "PrinciplePreferences",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/principle.ts",
+    "line": 35,
+    "code": "export type PrinciplePreferences = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "Principle",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/principle.ts",
+    "line": 40,
+    "code": "export type Principle = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "Remark",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/remark.ts",
+    "line": 5,
+    "code": "export type Remark = {",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "PrincipleRunner",
+    "kind": "type",
+    "file": "fyuld-pano-dm/src/entities/remark.ts",
+    "line": 14,
+    "code": "export type PrincipleRunner = (",
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "ErrorReason",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/error-declarations.ts",
+    "line": 3,
+    "code": "export type ErrorReason = \"extends-error\" | \"error-postfix\" | \"thrown\";",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "DeclaredError",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/error-declarations.ts",
+    "line": 5,
+    "code": "export type DeclaredError = {",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ErrorLocation",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/errors.ts",
+    "line": 5,
+    "code": "export type ErrorLocation = {",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ThrownAt",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/errors.ts",
+    "line": 10,
+    "code": "export type ThrownAt = ErrorLocation & {",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ErrorEntry",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/errors.ts",
+    "line": 14,
+    "code": "export type ErrorEntry = {",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ErrorsReport",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/errors.ts",
+    "line": 22,
+    "code": "export type ErrorsReport = {",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  }
+]

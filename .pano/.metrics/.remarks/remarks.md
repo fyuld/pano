@@ -1,0 +1,87 @@
+# Principle — Avoid Redeclaring Same String Literals: Clear
+
+.pano/principles/AvoidRedeclaringSameStringLiterals..md
+
+---
+
+# Principle — Barrel Files Are Re-Exports Only: Clear
+
+.pano/principles/BarrelFilesAreReExportsOnly.md
+
+---
+
+# Principle — Clear Conditional Purpose
+
+## Description
+
+Conditional expressions should be clear to follow and simple to understand.
+
+## Purpose
+
+AIs and Humans should have no problem understanding the product level, architecture level, or business level decision behind each logical fork.
+
+## Implementation
+
+When more than one term is needed to decide something, declare self-documenting constant to ensure that code is easy to understand.
+
+Consider bad code:
+
+```
+if(session.exist() && (session.ttl < currentTime ||  StaticStorage.isSecurityAlert())) {
+  logout();
+}
+```
+
+Replace with good and self documenting code:
+
+```
+const isSessionExpired = session.exist() && session.ttl < currentTime
+const isForcedLogout = session.exists() && StaticStorage.isSecurityAlert()
+
+if (isSessionExpired) {
+  logout();
+} else if (isForcedLogout) {
+  logout();
+}
+```
+
+Latter example documents code through variable name, and makes sure that whoever edits the code, human or AI has clear idea what happend.
+
+Now we also know all the reasons why user might be logged out, either session expired, or there was security alert that invalidated sessions. 
+
+## Default Agent Recommendation
+
+When fixing following problem, evaluate each of the remarks, and derive an understandable and self documenting constant name.
+
+Then present user with table that contains following columns:
+- Remark id
+- Link to file (name:line)
+- Recommended constant name
+- Current statements and terms.
+
+## Remarks
+
+- #1 `1 === 1 && 2 === 2` fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts:8
+
+---
+
+# Principle — Useful and Detailed Errors: Clear
+
+.pano/principles/UsefulAndDetailedErrors.md
+
+---
+
+# Scores
+
+## Per quality criteria
+
+| Quality Criteria | Points |
+| ---------------- | ------ |
+| Readability      | 20     |
+
+## Per principle
+
+| Principle                 | Points |
+| ------------------------- | ------ |
+| Clear Conditional Purpose | 20     |
+| **Total**                 | 20     |

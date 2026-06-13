@@ -1,0 +1,16 @@
+{
+  "name": "Barrel Files Are Re-Exports Only",
+  "preferences": {
+    "points": 10,
+    "qualityCriteria": [
+      "Readability"
+    ]
+  },
+  "description": "index.ts files should contain only re-export statements, no logic.",
+  "purpose": "Barrel files stay pure pass-throughs so imports do not pull in side effects or hide implementation.",
+  "implementation": "Use only `export { ... } from '...'` or `export * from '...'` statements in index.ts files. Move any logic, local declarations, or direct imports to non-index source files.",
+  "defaultAgentRecommendation": "None at the moment.",
+  "constraints": [
+    "$.indexFiles[?(@.imports > 0 || @.declarations > 0 || @.exports > 0)]"
+  ]
+}

@@ -1,0 +1,2 @@
+name,kind,file,line,code,package,language
+Step,interface,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,3,interface Step {,fyuld-pano-bdd,typescript

@@ -1,0 +1,162 @@
+[
+  {
+    "file": "fyuld-pano/src/assessments/conditional-expressions/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/assessments/fixture-files/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 1,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/assessments/index-files/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 1,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/assessments/string-literals/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 10,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/languages/gherkin/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 1,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/languages/terraform/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/languages/typescript/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano/src/render/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 3,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano-bdd/src/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 1,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano-bdd",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano-dm/src/config/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 1,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano-dm/src/entities/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 6,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano-dm/src/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano-errors/src/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 2,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "file": "fyuld-pano-optics/src/index.ts",
+    "line": "not-applicable",
+    "imports": 0,
+    "reExports": 1,
+    "exports": 0,
+    "declarations": 0,
+    "package": "fyuld-pano-optics",
+    "language": "typescript"
+  }
+]

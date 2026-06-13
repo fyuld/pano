@@ -1,0 +1,8 @@
+{
+  "assessmentFormats": ["Json", "Csv"],
+  "criteria": [],
+  "observedDirectories": {
+    "sourceCode": ["pano*/src", "fyuld*/src", "example-*"],
+    "testCode": ["pano*/specs", "pano*/test*", "fyuld/specs*", "fyuld/test*"]
+  }
+}

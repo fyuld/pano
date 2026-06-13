@@ -1,0 +1,1 @@
+{"version":3,"file":"principles-verify.d.ts","sourceRoot":"","sources":["../src/principles-verify.ts"],"names":[],"mappings":"AAMA,MAAM,MAAM,mBAAmB,GAAG;IAChC,IAAI,EAAE,MAAM,CAAA;IACZ,KAAK,EAAE,OAAO,CAAA;IACd,KAAK,CAAC,EAAE,MAAM,CAAA;CACf,CAAA;AAED,eAAO,MAAM,gBAAgB,GAC3B,eAAe,MAAM,KACpB,mBAAmB,EAiBrB,CAAA"}

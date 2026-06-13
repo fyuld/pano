@@ -1,0 +1,10 @@
+value,name,type,length,usage,file,line,code,package,language,numUsed
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,8,`| ${cols.join(' | ')} |`,,fyuld-pano,typescript,3
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,9,`| ${cols.map(() => '---').join(' | ')} |`,,fyuld-pano,typescript,3
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,10,...rows.map((row) => `| ${cols.map((c) => cell(row[c])).join(' | ')} |`),,fyuld-pano,typescript,3
+':**',includes,string,3,function,fyuld-pano-cli/src/render-markdown-ansi.ts,83,const isBoldKeyValueLine = line.startsWith('**') && line.includes(':**'),fyuld-pano-cli,typescript,2
+':**',indexOf,string,3,function,fyuld-pano-cli/src/render-markdown-ansi.ts,85,const colonIdx = line.indexOf(':**'),fyuld-pano-cli,typescript,2
+'.ts',endsWith,string,3,function,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,28,if (!file.endsWith('.ts')) continue,fyuld-pano,typescript,4
+'.ts',endsWith,string,3,function,fyuld-pano-cli/src/pano.ts,291,if (!file.endsWith('.ts')) continue,fyuld-pano-cli,typescript,4
+'.ts',endsWith,string,3,function,fyuld-pano-cli/src/pano.ts,358,} else if (inputPath.endsWith('.ts')) {,fyuld-pano-cli,typescript,4
+'.ts',basename,string,3,function,fyuld-pano-cli/src/pano.ts,359,const base = path.basename(inputPath, '.ts'),fyuld-pano-cli,typescript,4

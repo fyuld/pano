@@ -1,0 +1,156 @@
+kind,condition,numTerms,file,line,code,package,language
+ternary,typeof row.file === 'string',1,fyuld-pano/src/assessments/collect-occurrences.ts,26,const abs = typeof row.file === 'string' ? row.file : undefined,fyuld-pano,typescript
+ternary,abs,1,fyuld-pano/src/assessments/collect-occurrences.ts,27,const rel = abs ? path.relative(repoRoot, abs) : NotApplicable,fyuld-pano,typescript
+ternary,typeof rel === 'string',1,fyuld-pano/src/assessments/collect-occurrences.ts,28,const pkg = typeof rel === 'string' ? (rel.split('/')[0] ?? '') : '',fyuld-pano,typescript
+ternary,abs,1,fyuld-pano/src/assessments/collect-occurrences.ts,29,const language = abs,fyuld-pano,typescript
+if,ts.isParenthesizedExpression(node),1,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,15,if (ts.isParenthesizedExpression(node)) {,fyuld-pano,typescript
+if,isLogicalBinaryExpression(node),1,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,17,} else if (isLogicalBinaryExpression(node)) {,fyuld-pano,typescript
+if,!file.endsWith('.ts'),1,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,28,if (!file.endsWith('.ts')) continue,fyuld-pano,typescript
+if,ts.isIfStatement(node),1,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,56,if (ts.isIfStatement(node)) {,fyuld-pano,typescript
+if,ts.isSwitchStatement(node),1,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,58,} else if (ts.isSwitchStatement(node)) {,fyuld-pano,typescript
+if,ts.isConditionalExpression(node),1,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,60,} else if (ts.isConditionalExpression(node)) {,fyuld-pano,typescript
+if,1 === 1 && 2 === 2,2,fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts,8,if (1 === 1 && 2 === 2) {,fyuld-pano,typescript
+if,file.endsWith('.tf'),1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,32,if (file.endsWith('.tf')) {,fyuld-pano,typescript
+if,ts.isVariableStatement(declaration),1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,60,if (ts.isVariableStatement(declaration)) {,fyuld-pano,typescript
+if,ts.isIdentifier(decl.name),1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,64,if (ts.isIdentifier(decl.name)) {,fyuld-pano,typescript
+ternary,isConst,1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,65,push(decl.name.text, isConst ? 'constant' : 'variable', decl),fyuld-pano,typescript
+if,isNamedFunctionDeclaration,1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,68,} else if (isNamedFunctionDeclaration) {,fyuld-pano,typescript
+if,isNamedClassDeclaration,1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,70,} else if (isNamedClassDeclaration) {,fyuld-pano,typescript
+if,ts.isTypeAliasDeclaration(declaration),1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,72,} else if (ts.isTypeAliasDeclaration(declaration)) {,fyuld-pano,typescript
+if,ts.isInterfaceDeclaration(declaration),1,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,74,} else if (ts.isInterfaceDeclaration(declaration)) {,fyuld-pano,typescript
+if,!file.toLowerCase().includes('fixture'),1,fyuld-pano/src/assessments/fixture-files/scan-fixture-files.ts,7,if (!file.toLowerCase().includes('fixture')) continue,fyuld-pano,typescript
+if,ts.isImportDeclaration(stmt),1,fyuld-pano/src/assessments/index-files/scan-index-files.ts,35,if (ts.isImportDeclaration(stmt)) imports++,fyuld-pano,typescript
+if,ts.isExportDeclaration(stmt),1,fyuld-pano/src/assessments/index-files/scan-index-files.ts,36,if (ts.isExportDeclaration(stmt)) reExports++,fyuld-pano,typescript
+if,hasExportModifier(stmt),1,fyuld-pano/src/assessments/index-files/scan-index-files.ts,37,if (hasExportModifier(stmt)) exports++,fyuld-pano,typescript
+if,isDefinition(stmt),1,fyuld-pano/src/assessments/index-files/scan-index-files.ts,38,if (isDefinition(stmt)) declarations++,fyuld-pano,typescript
+if,path.basename(file) !== 'index.ts',1,fyuld-pano/src/assessments/index-files/scan-index-files.ts,46,if (path.basename(file) !== 'index.ts') continue,fyuld-pano,typescript
+if,ext === '.tf',1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,44,if (ext === '.tf') {,fyuld-pano,typescript
+if,!isPredefinedException(lit.value),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,46,if (!isPredefinedException(lit.value)) {,fyuld-pano,typescript
+if,!JS_EXTENSIONS.has(ext),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,62,if (!JS_EXTENSIONS.has(ext)) continue,fyuld-pano,typescript
+if,isDuplicableNamedDeclaration(node),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,74,if (isDuplicableNamedDeclaration(node)) {,fyuld-pano,typescript
+ternary,ts.isParameter(node),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,75,const usage = ts.isParameter(node) ? 'default' : 'variable',fyuld-pano,typescript
+if,ts.isCallExpression(node),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,87,} else if (ts.isCallExpression(node)) {,fyuld-pano,typescript
+ternary,ts.isPropertyAccessExpression(callee),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,89,const name = ts.isPropertyAccessExpression(callee),fyuld-pano,typescript
+ternary,ts.isIdentifier(callee),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,91,: ts.isIdentifier(callee),fyuld-pano,typescript
+if,name,1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,94,if (name) {,fyuld-pano,typescript
+if,isDuplicableStringLiteral(arg),1,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,96,if (isDuplicableStringLiteral(arg)) {,fyuld-pano,typescript
+if,resource,1,fyuld-pano/src/languages/terraform/parser.ts,26,if (resource) {,fyuld-pano,typescript
+if,data,1,fyuld-pano/src/languages/terraform/parser.ts,37,if (data) {,fyuld-pano,typescript
+if,named,1,fyuld-pano/src/languages/terraform/parser.ts,50,if (named) {,fyuld-pano,typescript
+if,block,1,fyuld-pano/src/languages/terraform/parser.ts,56,if (block) {,fyuld-pano,typescript
+if,isNonInterpolatedStringLiteral,1,fyuld-pano/src/languages/terraform/parser.ts,77,if (isNonInterpolatedStringLiteral) {,fyuld-pano,typescript
+ternary,range.kind === ts.SyntaxKind.SingleLineCommentTrivia,1,fyuld-pano/src/languages/typescript/comments.ts,13,range.kind === ts.SyntaxKind.SingleLineCommentTrivia,fyuld-pano,typescript
+ternary,ranges,1,fyuld-pano/src/languages/typescript/comments.ts,27,return ranges ? ranges.map((r) => fromRange(r, sourceFile.text)) : [],fyuld-pano,typescript
+ternary,ranges,1,fyuld-pano/src/languages/typescript/comments.ts,35,return ranges ? ranges.map((r) => fromRange(r, sourceFile.text)) : [],fyuld-pano,typescript
+if,!seen.has(c.pos),1,fyuld-pano/src/languages/typescript/comments.ts,43,if (!seen.has(c.pos)) {,fyuld-pano,typescript
+if,fileName.endsWith('.tsx'),1,fyuld-pano/src/languages/typescript/parser.ts,4,if (fileName.endsWith('.tsx')) return ts.ScriptKind.TSX,fyuld-pano,typescript
+if,fileName.endsWith('.jsx'),1,fyuld-pano/src/languages/typescript/parser.ts,5,if (fileName.endsWith('.jsx')) return ts.ScriptKind.JSX,fyuld-pano,typescript
+if,fileName.endsWith('.js'),1,fyuld-pano/src/languages/typescript/parser.ts,6,if (fileName.endsWith('.js')) return ts.ScriptKind.JS,fyuld-pano,typescript
+if,node.kind === ts.SyntaxKind.EndOfFileToken,1,fyuld-pano/src/languages/typescript/parser.ts,31,if (node.kind === ts.SyntaxKind.EndOfFileToken) return,fyuld-pano,typescript
+if,!hasChild,1,fyuld-pano/src/languages/typescript/parser.ts,36,if (!hasChild) {,fyuld-pano,typescript
+if,Array.isArray(value),1,fyuld-pano/src/render/render-helpers.ts,5,if (Array.isArray(value)) return value.join(';'),fyuld-pano,typescript
+if,isNotDefined(value),1,fyuld-pano/src/render/render-helpers.ts,6,if (isNotDefined(value)) return '',fyuld-pano,typescript
+if,!keys.includes(key),1,fyuld-pano/src/render/render-helpers.ts,14,if (!keys.includes(key)) keys.push(key),fyuld-pano,typescript
+if,!match,1,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,16,if (!match) continue;,fyuld-pano-bdd,typescript
+ternary,isGherkinStepKeyword,1,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,21,const kind: StepKind = isGherkinStepKeyword ? keyword : lastKind;,fyuld-pano-bdd,typescript
+if,isGherkinStepKeyword,1,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,22,if (isGherkinStepKeyword) {,fyuld-pano-bdd,typescript
+if,seen.has(dedupeKey),1,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,26,if (seen.has(dedupeKey)) continue;,fyuld-pano-bdd,typescript
+ternary,usePretty,1,fyuld-pano-cli/src/format.ts,8,usePretty ? `\x1b[${codes}m${text}\x1b[0m` : text,fyuld-pano-cli,typescript
+if,!part.includes('*'),1,fyuld-pano-cli/src/pano.ts,52,if (!part.includes('*')) {,fyuld-pano-cli,typescript
+if,fs.statSync(candidate).isDirectory(),1,fyuld-pano-cli/src/pano.ts,55,if (fs.statSync(candidate).isDirectory()) next.push(candidate),fyuld-pano-cli,typescript
+if,isMatchingSubdirectory,1,fyuld-pano-cli/src/pano.ts,65,if (isMatchingSubdirectory) next.push(path.join(d, entry.name)),fyuld-pano-cli,typescript
+if,entry.isDirectory(),1,fyuld-pano-cli/src/pano.ts,82,if (entry.isDirectory()) {,fyuld-pano-cli,typescript
+if,SKIP_DIRS.has(entry.name),1,fyuld-pano-cli/src/pano.ts,83,if (SKIP_DIRS.has(entry.name)) continue,fyuld-pano-cli,typescript
+if,isSourceFile,1,fyuld-pano-cli/src/pano.ts,85,} else if (isSourceFile) {,fyuld-pano-cli,typescript
+if,fs.existsSync(candidate),1,fyuld-pano-cli/src/pano.ts,96,if (fs.existsSync(candidate)) return candidate,fyuld-pano-cli,typescript
+if,parent === dir,1,fyuld-pano-cli/src/pano.ts,98,if (parent === dir) {,fyuld-pano-cli,typescript
+ternary,dirs.length > 0,1,fyuld-pano-cli/src/pano.ts,115,dirs.length > 0,fyuld-pano-cli,typescript
+ternary,path.isAbsolute(f),1,fyuld-pano-cli/src/pano.ts,122,.map((f) => (path.isAbsolute(f) ? f : path.resolve(f))),fyuld-pano-cli,typescript
+if,!fs.existsSync(compiledDir),1,fyuld-pano-cli/src/pano.ts,188,if (!fs.existsSync(compiledDir)) {,fyuld-pano-cli,typescript
+if,hasSourceCodeLocation,1,fyuld-pano-cli/src/pano.ts,219,if (hasSourceCodeLocation) {,fyuld-pano-cli,typescript
+if,a.startsWith('--'),1,fyuld-pano-cli/src/pano.ts,255,if (a.startsWith('--')) {,fyuld-pano-cli,typescript
+ternary,a.indexOf('=') >= 0,1,fyuld-pano-cli/src/pano.ts,256,const name = a.indexOf('=') >= 0 ? a.slice(2, a.indexOf('=')) : a.slice(2),fyuld-pano-cli,typescript
+if,name === 'plain-formatting',1,fyuld-pano-cli/src/pano.ts,257,if (name === 'plain-formatting') {,fyuld-pano-cli,typescript
+if,subcommand === 'analyze',1,fyuld-pano-cli/src/pano.ts,268,if (subcommand === 'analyze') {,fyuld-pano-cli,typescript
+if,subcommand === 'assess',1,fyuld-pano-cli/src/pano.ts,282,} else if (subcommand === 'assess') {,fyuld-pano-cli,typescript
+if,!file.endsWith('.ts'),1,fyuld-pano-cli/src/pano.ts,291,if (!file.endsWith('.ts')) continue,fyuld-pano-cli,typescript
+if,isGenerateSubcommand,1,fyuld-pano-cli/src/pano.ts,309,} else if (isGenerateSubcommand) {,fyuld-pano-cli,typescript
+if,isBddStepsUxTarget,1,fyuld-pano-cli/src/pano.ts,312,if (isBddStepsUxTarget) {,fyuld-pano-cli,typescript
+if,idx === -1,1,fyuld-pano-cli/src/pano.ts,317,if (idx === -1) {,fyuld-pano-cli,typescript
+if,stat.isDirectory(),1,fyuld-pano-cli/src/pano.ts,349,if (stat.isDirectory()) {,fyuld-pano-cli,typescript
+if,e.isDirectory(),1,fyuld-pano-cli/src/pano.ts,352,if (e.isDirectory()) walk(path.join(dir, e.name)),fyuld-pano-cli,typescript
+if,e.name.endsWith(DefaultBddFeatureExtension),1,fyuld-pano-cli/src/pano.ts,353,else if (e.name.endsWith(DefaultBddFeatureExtension)),fyuld-pano-cli,typescript
+if,inputPath.endsWith('.ts'),1,fyuld-pano-cli/src/pano.ts,358,} else if (inputPath.endsWith('.ts')) {,fyuld-pano-cli,typescript
+if,subcommand === 'principles',1,fyuld-pano-cli/src/pano.ts,386,} else if (subcommand === 'principles') {,fyuld-pano-cli,typescript
+if,action === 'compile',1,fyuld-pano-cli/src/pano.ts,391,if (action === 'compile') {,fyuld-pano-cli,typescript
+if,action === 'verify',1,fyuld-pano-cli/src/pano.ts,396,} else if (action === 'verify') {,fyuld-pano-cli,typescript
+if,result.valid,1,fyuld-pano-cli/src/pano.ts,399,if (result.valid) {,fyuld-pano-cli,typescript
+if,!allValid,1,fyuld-pano-cli/src/pano.ts,407,if (!allValid) process.exit(1),fyuld-pano-cli,typescript
+if,subcommand === 'run',1,fyuld-pano-cli/src/pano.ts,411,} else if (subcommand === 'run') {,fyuld-pano-cli,typescript
+if,subcommand === 'taskify',1,fyuld-pano-cli/src/pano.ts,421,} else if (subcommand === 'taskify') {,fyuld-pano-cli,typescript
+ternary,ids.length > 0,1,fyuld-pano-cli/src/pano.ts,433,const idSet = ids.length > 0 ? new Set(ids) : null,fyuld-pano-cli,typescript
+ternary,idSet === null,1,fyuld-pano-cli/src/pano.ts,440,idSet === null,fyuld-pano-cli,typescript
+if,subcommand === 'clean',1,fyuld-pano-cli/src/pano.ts,459,} else if (subcommand === 'clean') {,fyuld-pano-cli,typescript
+if,!file.endsWith(FileExtension.Md),1,fyuld-pano-cli/src/principles-compile.ts,19,if (!file.endsWith(FileExtension.Md)) continue,fyuld-pano-cli,typescript
+if,!file.endsWith(FileExtension.Md),1,fyuld-pano-cli/src/principles-verify.ts,18,if (!file.endsWith(FileExtension.Md)) continue,fyuld-pano-cli,typescript
+ternary,error instanceof Error,1,fyuld-pano-cli/src/principles-verify.ts,27,error: error instanceof Error ? error.message : String(error),,fyuld-pano-cli,typescript
+if,totalLine !== undefined,1,fyuld-pano-cli/src/render-markdown-ansi.ts,20,if (totalLine !== undefined) {,fyuld-pano-cli,typescript
+if,line === '# Scores',1,fyuld-pano-cli/src/render-markdown-ansi.ts,38,if (line === '# Scores') {,fyuld-pano-cli,typescript
+if,line.startsWith('# Principle — '),1,fyuld-pano-cli/src/render-markdown-ansi.ts,43,if (line.startsWith('# Principle — ')) {,fyuld-pano-cli,typescript
+if,!firstPrinciple,1,fyuld-pano-cli/src/render-markdown-ansi.ts,44,if (!firstPrinciple) console.log(''),fyuld-pano-cli,typescript
+if,line.startsWith('### '),1,fyuld-pano-cli/src/render-markdown-ansi.ts,52,if (line.startsWith('### ')) {,fyuld-pano-cli,typescript
+if,isTableDataRow,1,fyuld-pano-cli/src/render-markdown-ansi.ts,63,if (isTableDataRow) {,fyuld-pano-cli,typescript
+if,rows.length > 0,1,fyuld-pano-cli/src/render-markdown-ansi.ts,68,if (rows.length > 0) {,fyuld-pano-cli,typescript
+ternary,hasTotal,1,fyuld-pano-cli/src/render-markdown-ansi.ts,72,const bodyRows = hasTotal ? rows.slice(0, -1) : rows,fyuld-pano-cli,typescript
+ternary,hasTotal,1,fyuld-pano-cli/src/render-markdown-ansi.ts,73,const totalRow = hasTotal ? lastRow : undefined,fyuld-pano-cli,typescript
+ternary,totalRow,1,fyuld-pano-cli/src/render-markdown-ansi.ts,77,totalRow ? fmtScoreRow(totalRow.label, totalRow.value) : undefined,fyuld-pano-cli,typescript
+if,isBoldKeyValueLine,1,fyuld-pano-cli/src/render-markdown-ansi.ts,84,if (isBoldKeyValueLine) {,fyuld-pano-cli,typescript
+if,line === '**Remarks:**',1,fyuld-pano-cli/src/render-markdown-ansi.ts,95,if (line === '**Remarks:**') {,fyuld-pano-cli,typescript
+if,line.startsWith('- '),1,fyuld-pano-cli/src/render-markdown-ansi.ts,102,if (line.startsWith('- ')) {,fyuld-pano-cli,typescript
+ternary,idMatch,1,fyuld-pano-cli/src/render-markdown-ansi.ts,105,const id = idMatch ? idMatch[1] : '',fyuld-pano-cli,typescript
+ternary,idMatch,1,fyuld-pano-cli/src/render-markdown-ansi.ts,106,const rest = idMatch ? idMatch[2] : text,fyuld-pano-cli,typescript
+ternary,hasCode,1,fyuld-pano-cli/src/render-markdown-ansi.ts,109,const code = hasCode ? rest.slice(1, lastSpace - 1) : '',fyuld-pano-cli,typescript
+ternary,hasCode,1,fyuld-pano-cli/src/render-markdown-ansi.ts,110,const loc = hasCode ? rest.slice(lastSpace + 1) : rest,fyuld-pano-cli,typescript
+ternary,id,1,fyuld-pano-cli/src/render-markdown-ansi.ts,112,const boldId = id ? styled('1', id) + '  ' : '',fyuld-pano-cli,typescript
+ternary,hasCode,1,fyuld-pano-cli/src/render-markdown-ansi.ts,114,hasCode ? `    ${boldId}${code}  ${dimLoc}` : `    ${boldId}${dimLoc}`,fyuld-pano-cli,typescript
+if,isHorizontalRuleOrBlankLine,1,fyuld-pano-cli/src/render-markdown-ansi.ts,121,if (isHorizontalRuleOrBlankLine) {,fyuld-pano-cli,typescript
+if,line.trim(),1,fyuld-pano-cli/src/render-markdown-ansi.ts,126,if (line.trim()) {,fyuld-pano-cli,typescript
+ternary,typeof remark.line === 'number',1,fyuld-pano-cli/src/render-run-report.ts,29,const lineNum = typeof remark.line === 'number' ? remark.line : undefined,fyuld-pano-cli,typescript
+ternary,lineNum !== undefined,1,fyuld-pano-cli/src/render-run-report.ts,30,const loc = `${remark.file ?? ''}${lineNum !== undefined ? `:${lineNum}` : ''}`,fyuld-pano-cli,typescript
+ternary,typeof remark.lineContent === 'string',1,fyuld-pano-cli/src/render-run-report.ts,32,typeof remark.lineContent === 'string' ? remark.lineContent : '',fyuld-pano-cli,typescript
+ternary,typeof remark.condition === 'string',1,fyuld-pano-cli/src/render-run-report.ts,34,typeof remark.condition === 'string' ? remark.condition : lineContent,fyuld-pano-cli,typescript
+ternary,content,1,fyuld-pano-cli/src/render-run-report.ts,37,return content ? `${id} \`${content}\` ${loc}` : `${id} ${loc}`,fyuld-pano-cli,typescript
+if,verdict.violations.length === 0,1,fyuld-pano-cli/src/render-run-report.ts,42,if (verdict.violations.length === 0) {,fyuld-pano-cli,typescript
+if,verdict.mdFile,1,fyuld-pano-cli/src/render-run-report.ts,46,if (verdict.mdFile) clearJson.path = verdict.mdFile,fyuld-pano-cli,typescript
+if,remarks.length > 0,1,fyuld-pano-cli/src/render-run-report.ts,60,if (remarks.length > 0) json.remarks = remarks,fyuld-pano-cli,typescript
+if,cost > 0,1,fyuld-pano-cli/src/render-run-report.ts,106,if (cost > 0) {,fyuld-pano-cli,typescript
+if,principleCosts.length > 0,1,fyuld-pano-cli/src/render-run-report.ts,118,if (principleCosts.length > 0) {,fyuld-pano-cli,typescript
+if,!fs.existsSync(filePath),1,fyuld-pano-cli/src/safely-overwrite-file.ts,11,if (!fs.existsSync(filePath)) {,fyuld-pano-cli,typescript
+if,!process.stdin.isTTY,1,fyuld-pano-cli/src/safely-overwrite-file.ts,17,if (!process.stdin.isTTY) {,fyuld-pano-cli,typescript
+if,!answer.startsWith('o'),1,fyuld-pano-cli/src/safely-overwrite-file.ts,32,if (!answer.startsWith('o')) {,fyuld-pano-cli,typescript
+if,f === 'Json',1,fyuld-pano-cli/src/write-findings.ts,17,if (f === 'Json') {,fyuld-pano-cli,typescript
+if,f === 'Csv',1,fyuld-pano-cli/src/write-findings.ts,19,} else if (f === 'Csv') {,fyuld-pano-cli,typescript
+if,isErrorTypeDeclaration,1,fyuld-pano-errors/src/error-declarations.ts,30,if (isErrorTypeDeclaration) {,fyuld-pano-errors,typescript
+if,ts.isNewExpression(expr),1,fyuld-pano-errors/src/errors.ts,43,if (ts.isNewExpression(expr)) return "constructor";,fyuld-pano-errors,typescript
+if,ts.isCallExpression(expr),1,fyuld-pano-errors/src/errors.ts,44,if (ts.isCallExpression(expr)) return "factory";,fyuld-pano-errors,typescript
+if,(type.flags & ts.TypeFlags.Object) === 0,1,fyuld-pano-errors/src/errors.ts,61,if ((type.flags & ts.TypeFlags.Object) === 0) return false;,fyuld-pano-errors,typescript
+if,selfName === "Error",1,fyuld-pano-errors/src/errors.ts,70,if (selfName === "Error") return ["Error"];,fyuld-pano-errors,typescript
+if,!isClassOrInterface(type),1,fyuld-pano-errors/src/errors.ts,71,if (!isClassOrInterface(type)) return [];,fyuld-pano-errors,typescript
+if,base.getSymbol()?.getName() === "Object",1,fyuld-pano-errors/src/errors.ts,73,if (base.getSymbol()?.getName() === "Object") continue;,fyuld-pano-errors,typescript
+if,sub.length > 0,1,fyuld-pano-errors/src/errors.ts,75,if (sub.length > 0) return selfName ? [selfName, ...sub] : sub;,fyuld-pano-errors,typescript
+ternary,selfName,1,fyuld-pano-errors/src/errors.ts,75,if (sub.length > 0) return selfName ? [selfName, ...sub] : sub;,fyuld-pano-errors,typescript
+if,!symbol,1,fyuld-pano-errors/src/errors.ts,82,if (!symbol) return undefined;,fyuld-pano-errors,typescript
+if,name.startsWith("__"),1,fyuld-pano-errors/src/errors.ts,84,if (name.startsWith("__")) return undefined;,fyuld-pano-errors,typescript
+if,type.isUnion(),1,fyuld-pano-errors/src/errors.ts,89,if (type.isUnion()) return type.types.flatMap(collectErrorTypes);,fyuld-pano-errors,typescript
+if,(type.flags & PRIMITIVE_MASK) !== 0,1,fyuld-pano-errors/src/errors.ts,90,if ((type.flags & PRIMITIVE_MASK) !== 0) return [];,fyuld-pano-errors,typescript
+if,existing,1,fyuld-pano-errors/src/errors.ts,96,if (existing) return existing;,fyuld-pano-errors,typescript
+if,!entry.reasons.includes(reason),1,fyuld-pano-errors/src/errors.ts,108,if (!entry.reasons.includes(reason)) entry.reasons.push(reason);,fyuld-pano-errors,typescript
+if,shouldSetInheritancePath,1,fyuld-pano-errors/src/errors.ts,114,if (shouldSetInheritancePath) {,fyuld-pano-errors,typescript
+if,!targets.has(path.resolve(sourceFile.fileName)),1,fyuld-pano-errors/src/errors.ts,120,if (!targets.has(path.resolve(sourceFile.fileName))) continue;,fyuld-pano-errors,typescript
+if,!entry.declaredAt,1,fyuld-pano-errors/src/errors.ts,126,if (!entry.declaredAt) {,fyuld-pano-errors,typescript
+if,isNamedClassDeclaration,1,fyuld-pano-errors/src/errors.ts,134,if (isNamedClassDeclaration) {,fyuld-pano-errors,typescript
+if,symbol,1,fyuld-pano-errors/src/errors.ts,136,if (symbol) {,fyuld-pano-errors,typescript
+if,chain.length > 0,1,fyuld-pano-errors/src/errors.ts,138,if (chain.length > 0) {,fyuld-pano-errors,typescript
+if,!entry.declaredAt,1,fyuld-pano-errors/src/errors.ts,141,if (!entry.declaredAt) {,fyuld-pano-errors,typescript
+if,ts.isThrowStatement(node),1,fyuld-pano-errors/src/errors.ts,150,} else if (ts.isThrowStatement(node)) {,fyuld-pano-errors,typescript
+if,!name,1,fyuld-pano-errors/src/errors.ts,156,if (!name) continue;,fyuld-pano-errors,typescript

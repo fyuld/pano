@@ -1,0 +1,32 @@
+name,kind,file,line,code,package,language
+FindingBucket,type,fyuld-pano/src/assessments/collect-findings.ts,6,export type FindingBucket = { key: string; file: string; findings: Finding[] },fyuld-pano,typescript
+FindingSpec,type,fyuld-pano/src/assessments/collect-findings.ts,8,type FindingSpec = {,fyuld-pano,typescript
+OccurrenceBucket,type,fyuld-pano/src/assessments/collect-occurrences.ts,11,export type OccurrenceBucket = {,fyuld-pano,typescript
+DeclarationKind,type,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,8,type DeclarationKind =,fyuld-pano,typescript
+ScannedRow,type,fyuld-pano/src/assessments/scanned-row.ts,3,export type ScannedRow = {,fyuld-pano,typescript
+TerraformDeclaration,type,fyuld-pano/src/languages/terraform/parser.ts,1,export type TerraformDeclaration = {,fyuld-pano,typescript
+TerraformStringLiteral,type,fyuld-pano/src/languages/terraform/parser.ts,8,export type TerraformStringLiteral = {,fyuld-pano,typescript
+Comment,type,fyuld-pano/src/languages/typescript/comments.ts,3,export type Comment = {,fyuld-pano,typescript
+PrincipleVerdict,type,fyuld-pano/src/principles/run-principles.ts,5,export type PrincipleVerdict = {,fyuld-pano,typescript
+ViolationRow,type,fyuld-pano/src/principles/violation-to-be-renamed-to-remark.ts,3,export type ViolationRow = Finding,fyuld-pano,typescript
+StepKind,type,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,1,type StepKind = "Given" | "When" | "Then";,fyuld-pano-bdd,typescript
+CompiledPrinciple,type,fyuld-pano-cli/src/principles-compile.ts,7,export type CompiledPrinciple = {,fyuld-pano-cli,typescript
+PrincipleValidation,type,fyuld-pano-cli/src/principles-verify.ts,7,export type PrincipleValidation = {,fyuld-pano-cli,typescript
+ObservedDirectories,type,fyuld-pano-dm/src/config/PanOpticumConfig.ts,3,export type ObservedDirectories = {,fyuld-pano-dm,typescript
+PanOpticumConfig,type,fyuld-pano-dm/src/config/PanOpticumConfig.ts,8,export type PanOpticumConfig = {,fyuld-pano-dm,typescript
+NotApplicable,type,fyuld-pano-dm/src/entities/common.ts,2,export type NotApplicable = typeof NotApplicable,fyuld-pano-dm,typescript
+Finding,type,fyuld-pano-dm/src/entities/finding.ts,4,export type Finding = {,fyuld-pano-dm,typescript
+BehaviorScanner,type,fyuld-pano-dm/src/entities/finding.ts,12,export type BehaviorScanner = (occurrences: Occurrence[]) => Finding[],fyuld-pano-dm,typescript
+Occurrence,type,fyuld-pano-dm/src/entities/occurrence.ts,3,export type Occurrence = {,fyuld-pano-dm,typescript
+CodeScanner,type,fyuld-pano-dm/src/entities/occurrence.ts,11,export type CodeScanner<Ast> = (ast: Ast) => Occurrence[],fyuld-pano-dm,typescript
+QualityCriteria,type,fyuld-pano-dm/src/entities/principle.ts,1,export type QualityCriteria =,fyuld-pano-dm,typescript
+PrinciplePreferences,type,fyuld-pano-dm/src/entities/principle.ts,35,export type PrinciplePreferences = {,fyuld-pano-dm,typescript
+Principle,type,fyuld-pano-dm/src/entities/principle.ts,40,export type Principle = {,fyuld-pano-dm,typescript
+Remark,type,fyuld-pano-dm/src/entities/remark.ts,5,export type Remark = {,fyuld-pano-dm,typescript
+PrincipleRunner,type,fyuld-pano-dm/src/entities/remark.ts,14,export type PrincipleRunner = (,fyuld-pano-dm,typescript
+ErrorReason,type,fyuld-pano-errors/src/error-declarations.ts,3,export type ErrorReason = "extends-error" | "error-postfix" | "thrown";,fyuld-pano-errors,typescript
+DeclaredError,type,fyuld-pano-errors/src/error-declarations.ts,5,export type DeclaredError = {,fyuld-pano-errors,typescript
+ErrorLocation,type,fyuld-pano-errors/src/errors.ts,5,export type ErrorLocation = {,fyuld-pano-errors,typescript
+ThrownAt,type,fyuld-pano-errors/src/errors.ts,10,export type ThrownAt = ErrorLocation & {,fyuld-pano-errors,typescript
+ErrorEntry,type,fyuld-pano-errors/src/errors.ts,14,export type ErrorEntry = {,fyuld-pano-errors,typescript
+ErrorsReport,type,fyuld-pano-errors/src/errors.ts,22,export type ErrorsReport = {,fyuld-pano-errors,typescript
