@@ -1,0 +1,21 @@
+{
+  "name": { "from": "#" },
+  "preferences": {
+    "from": "# / ## Preferences / properties(lowerCamelCase)",
+    "fields": {
+      "points": { "type": "number" },
+      "threshold": { "type": "number", "optional": true },
+      "qualityCriteria": { "type": "array", "optional": true }
+    }
+  },
+  "description": { "from": "# / ## Description / text()", "optional": true },
+  "purpose": { "from": "# / ## Purpose / text()" },
+  "implementation": { "from": "# / ## Implementation / text()" },
+  "defaultAgentRecommendation": {
+    "from": "# / ## Implementation / ### Default Agent Recommendation / text()",
+    "optional": true
+  },
+  "constraints": {
+    "from": "# / ## Implementation / ### Constraints / items()"
+  }
+}

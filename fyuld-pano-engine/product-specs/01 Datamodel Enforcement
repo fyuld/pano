@@ -1,0 +1,27 @@
+# Datamodel Enforcement
+
+For various reasons, it is useful to split code from data model. Both physicl and logical ones.
+
+For example, it can be a different team working on it. Or it can be hallucination prevention. In case AI goes nuts and starts to simplify datamodel, which is effectively service-to-service contracts.
+
+Policy should effectively help humans and AIs to work on code.
+
+Example A:
+Website is not allowed to modify it’s datamodel. It is set on the backend. Either OpenAPI or TS Datamodel is used to distribute it. Or maybe even GraphQL. Doesn’t matter.
+
+However. AI might want to have additions.
+
+So Production code expects only certain types to be defined within project:
+
+${Something}Props – for React props.
+TestType${Something} – Test types helpers.
+
+Everything else being passed down or generated.
+
+However we don't want to complicate development.
+
+So AI is allowed to define temporary classes here and there. Maybe to later ask edits.
+
+And it is allowed to define Z_TempClass_{String} or to be precise ${UglyPrefix}_{String} 
+
+types that it might need to use for dev time.

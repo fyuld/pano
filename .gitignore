@@ -1,3 +1,5 @@
-.claude
-node_modules
+.claude/
+.pano/
+node_modules/
+dist/
 .DS_Store
