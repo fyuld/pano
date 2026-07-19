@@ -1,7 +1,7 @@
 [
   {
     "label": "ConfigError",
-    "file": "fyuld-pano-cli/src/config-error.ts",
+    "file": "fyuld-pano/src/config-error.ts",
     "line": 3,
     "reasons": [
       "error-postfix",
@@ -13,12 +13,12 @@
       "FyuldError",
       "Error"
     ],
-    "package": "fyuld-pano-cli",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "label": "FindingError",
-    "file": "fyuld-pano-cli/src/finding-error.ts",
+    "file": "fyuld-pano/src/finding-error.ts",
     "line": 3,
     "reasons": [
       "error-postfix",
@@ -30,7 +30,24 @@
       "FyuldError",
       "Error"
     ],
-    "package": "fyuld-pano-cli",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "label": "PanoError",
+    "file": "fyuld-pano-dm/src/errors/pano-error.ts",
+    "line": 4,
+    "reasons": [
+      "error-postfix",
+      "extends-error",
+      "thrown"
+    ],
+    "inheritancePath": [
+      "PanoError",
+      "FyuldError",
+      "Error"
+    ],
+    "package": "fyuld-pano-dm",
     "language": "typescript"
   },
   {

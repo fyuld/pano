@@ -1,20 +1,20 @@
 [
   {
+    "name": "safelyOverwriteFile",
+    "kind": "function",
+    "file": "fyuld-pano/src/safely-overwrite-file.ts",
+    "line": 5,
+    "code": "export async function safelyOverwriteFile(",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
     "name": "generateBddStepsForUx",
     "kind": "function",
     "file": "fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts",
     "line": 8,
     "code": "export function generateBddStepsForUx(featureContent: string): string {",
     "package": "fyuld-pano-bdd",
-    "language": "typescript"
-  },
-  {
-    "name": "safelyOverwriteFile",
-    "kind": "function",
-    "file": "fyuld-pano-cli/src/safely-overwrite-file.ts",
-    "line": 5,
-    "code": "export async function safelyOverwriteFile(",
-    "package": "fyuld-pano-cli",
     "language": "typescript"
   },
   {

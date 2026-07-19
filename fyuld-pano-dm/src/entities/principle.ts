@@ -34,6 +34,7 @@ export type QualityCriteria =
 
 export type PrinciplePreferences = {
   points: number
+  threshold?: number
   qualityCriteria?: QualityCriteria[]
 }
 

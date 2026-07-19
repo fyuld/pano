@@ -1,91 +1,19 @@
 [
   {
-    "name": "FindingBucket",
+    "name": "CompiledPrinciple",
     "kind": "type",
-    "file": "fyuld-pano/src/assessments/collect-findings.ts",
-    "line": 6,
-    "code": "export type FindingBucket = { key: string; file: string; findings: Finding[] }",
+    "file": "fyuld-pano/src/principles-compile.ts",
+    "line": 7,
+    "code": "export type CompiledPrinciple = {",
     "package": "fyuld-pano",
     "language": "typescript"
   },
   {
-    "name": "FindingSpec",
+    "name": "PrincipleValidation",
     "kind": "type",
-    "file": "fyuld-pano/src/assessments/collect-findings.ts",
-    "line": 8,
-    "code": "type FindingSpec = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "OccurrenceBucket",
-    "kind": "type",
-    "file": "fyuld-pano/src/assessments/collect-occurrences.ts",
-    "line": 11,
-    "code": "export type OccurrenceBucket = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DeclarationKind",
-    "kind": "type",
-    "file": "fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts",
-    "line": 8,
-    "code": "type DeclarationKind =",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "ScannedRow",
-    "kind": "type",
-    "file": "fyuld-pano/src/assessments/scanned-row.ts",
-    "line": 3,
-    "code": "export type ScannedRow = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "TerraformDeclaration",
-    "kind": "type",
-    "file": "fyuld-pano/src/languages/terraform/parser.ts",
-    "line": 1,
-    "code": "export type TerraformDeclaration = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "TerraformStringLiteral",
-    "kind": "type",
-    "file": "fyuld-pano/src/languages/terraform/parser.ts",
-    "line": 8,
-    "code": "export type TerraformStringLiteral = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "Comment",
-    "kind": "type",
-    "file": "fyuld-pano/src/languages/typescript/comments.ts",
-    "line": 3,
-    "code": "export type Comment = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "PrincipleVerdict",
-    "kind": "type",
-    "file": "fyuld-pano/src/principles/run-principles.ts",
-    "line": 5,
-    "code": "export type PrincipleVerdict = {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "ViolationRow",
-    "kind": "type",
-    "file": "fyuld-pano/src/principles/violation-to-be-renamed-to-remark.ts",
-    "line": 3,
-    "code": "export type ViolationRow = Finding",
+    "file": "fyuld-pano/src/principles-verify.ts",
+    "line": 7,
+    "code": "export type PrincipleValidation = {",
     "package": "fyuld-pano",
     "language": "typescript"
   },
@@ -96,24 +24,6 @@
     "line": 1,
     "code": "type StepKind = \"Given\" | \"When\" | \"Then\";",
     "package": "fyuld-pano-bdd",
-    "language": "typescript"
-  },
-  {
-    "name": "CompiledPrinciple",
-    "kind": "type",
-    "file": "fyuld-pano-cli/src/principles-compile.ts",
-    "line": 7,
-    "code": "export type CompiledPrinciple = {",
-    "package": "fyuld-pano-cli",
-    "language": "typescript"
-  },
-  {
-    "name": "PrincipleValidation",
-    "kind": "type",
-    "file": "fyuld-pano-cli/src/principles-verify.ts",
-    "line": 7,
-    "code": "export type PrincipleValidation = {",
-    "package": "fyuld-pano-cli",
     "language": "typescript"
   },
   {
@@ -201,7 +111,7 @@
     "name": "Principle",
     "kind": "type",
     "file": "fyuld-pano-dm/src/entities/principle.ts",
-    "line": 40,
+    "line": 41,
     "code": "export type Principle = {",
     "package": "fyuld-pano-dm",
     "language": "typescript"
@@ -222,6 +132,132 @@
     "line": 14,
     "code": "export type PrincipleRunner = (",
     "package": "fyuld-pano-dm",
+    "language": "typescript"
+  },
+  {
+    "name": "FindingBucket",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/assessments/collect-findings.ts",
+    "line": 6,
+    "code": "export type FindingBucket = { key: string; file: string; findings: Finding[] }",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "FindingSpec",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/assessments/collect-findings.ts",
+    "line": 8,
+    "code": "type FindingSpec = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "OccurrenceBucket",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/assessments/collect-occurrences.ts",
+    "line": 18,
+    "code": "export type OccurrenceBucket = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "DeclarationKind",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts",
+    "line": 8,
+    "code": "type DeclarationKind =",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "ScannedRow",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/assessments/scanned-row.ts",
+    "line": 3,
+    "code": "export type ScannedRow = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "TerraformDeclaration",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/languages/terraform/parser.ts",
+    "line": 1,
+    "code": "export type TerraformDeclaration = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "TerraformStringLiteral",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/languages/terraform/parser.ts",
+    "line": 8,
+    "code": "export type TerraformStringLiteral = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "Comment",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/languages/typescript/comments.ts",
+    "line": 3,
+    "code": "export type Comment = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "PrincipleVerdict",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/principles/run-principles.ts",
+    "line": 5,
+    "code": "export type PrincipleVerdict = {",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "ViolationRow",
+    "kind": "type",
+    "file": "fyuld-pano-engine/src/principles/violation-to-be-renamed-to-remark.ts",
+    "line": 3,
+    "code": "export type ViolationRow = Finding",
+    "package": "fyuld-pano-engine",
+    "language": "typescript"
+  },
+  {
+    "name": "ParsedSource",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/class-constructors.ts",
+    "line": 3,
+    "code": "export type ParsedSource = { file: string; ast: ts.SourceFile };",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ClassConstructorAccessor",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/class-constructors.ts",
+    "line": 5,
+    "code": "export type ClassConstructorAccessor =",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ClassConstructorCategory",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/class-constructors.ts",
+    "line": 11,
+    "code": "export type ClassConstructorCategory = \"Object\" | \"Error\" | \"Other\";",
+    "package": "fyuld-pano-errors",
+    "language": "typescript"
+  },
+  {
+    "name": "ClassConstructorRow",
+    "kind": "type",
+    "file": "fyuld-pano-errors/src/class-constructors.ts",
+    "line": 13,
+    "code": "export type ClassConstructorRow = {",
+    "package": "fyuld-pano-errors",
     "language": "typescript"
   },
   {

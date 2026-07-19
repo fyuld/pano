@@ -2,19 +2,19 @@
   {
     "name": "usePretty",
     "kind": "variable",
-    "file": "fyuld-pano-cli/src/format.ts",
+    "file": "fyuld-pano/src/format.ts",
     "line": 1,
     "code": "let usePretty = true",
-    "package": "fyuld-pano-cli",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "plainFormatting",
     "kind": "variable",
-    "file": "fyuld-pano-cli/src/pano.ts",
-    "line": 252,
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 257,
     "code": "let plainFormatting = false",
-    "package": "fyuld-pano-cli",
+    "package": "fyuld-pano",
     "language": "typescript"
   }
 ]

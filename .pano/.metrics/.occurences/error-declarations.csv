@@ -1,4 +1,5 @@
 label,file,line,reasons,inheritancePath,package,language
-ConfigError,fyuld-pano-cli/src/config-error.ts,3,error-postfix;extends-error;thrown,ConfigError;FyuldError;Error,fyuld-pano-cli,typescript
-FindingError,fyuld-pano-cli/src/finding-error.ts,3,error-postfix;extends-error;thrown,FindingError;FyuldError;Error,fyuld-pano-cli,typescript
+ConfigError,fyuld-pano/src/config-error.ts,3,error-postfix;extends-error;thrown,ConfigError;FyuldError;Error,fyuld-pano,typescript
+FindingError,fyuld-pano/src/finding-error.ts,3,error-postfix;extends-error;thrown,FindingError;FyuldError;Error,fyuld-pano,typescript
+PanoError,fyuld-pano-dm/src/errors/pano-error.ts,4,error-postfix;extends-error;thrown,PanoError;FyuldError;Error,fyuld-pano-dm,typescript
 DeclaredError,fyuld-pano-errors/src/error-declarations.ts,5,error-postfix,,fyuld-pano-errors,typescript

@@ -1,102 +1,110 @@
 name,kind,file,line,code,package,language
-FINDING_SPECS,constant,fyuld-pano/src/assessments/collect-findings.ts,15,const FINDING_SPECS: FindingSpec[] = [,fyuld-pano,typescript
-collectFindings,constant,fyuld-pano/src/assessments/collect-findings.ts,30,export const collectFindings = (,fyuld-pano,typescript
-LANGUAGE_BY_EXT,constant,fyuld-pano/src/assessments/collect-occurrences.ts,17,const LANGUAGE_BY_EXT: Record<string, string> = {,fyuld-pano,typescript
-enrich,constant,fyuld-pano/src/assessments/collect-occurrences.ts,24,const enrich = (rows: ScannedRow[], repoRoot: string): Occurrence[] =>,fyuld-pano,typescript
-DECLARATION_BUCKETS,constant,fyuld-pano/src/assessments/collect-occurrences.ts,41,const DECLARATION_BUCKETS = [,fyuld-pano,typescript
-collectOccurrences,constant,fyuld-pano/src/assessments/collect-occurrences.ts,50,export const collectOccurrences = (,fyuld-pano,typescript
-findComplexConditionalExpressions,constant,fyuld-pano/src/assessments/conditional-expressions/find-complex-conditional-expressions.ts,3,export const findComplexConditionalExpressions = (,fyuld-pano,typescript
-isLogicalBinaryExpression,constant,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,7,const isLogicalBinaryExpression = (,fyuld-pano,typescript
-countTerms,constant,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,14,const countTerms = (node: ts.Expression): number => {,fyuld-pano,typescript
-scanConditionalExpressions,constant,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,24,export const scanConditionalExpressions = (files: string[]): ScannedRow[] => {,fyuld-pano,typescript
-findDuplicateDeclarations,constant,fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts,3,export const findDuplicateDeclarations = (,fyuld-pano,typescript
-lineOf,constant,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,16,const lineOf = (node: ts.Node, sourceFile: ts.SourceFile): number =>,fyuld-pano,typescript
-codeAt,constant,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,19,const codeAt = (line: number, lines: string[]): string =>,fyuld-pano,typescript
-isAnonymousDeclaration,constant,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,22,const isAnonymousDeclaration = (,fyuld-pano,typescript
-scanDeclarations,constant,fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts,26,export const scanDeclarations = (files: string[]): ScannedRow[] => {,fyuld-pano,typescript
-scanFixtureFiles,constant,fyuld-pano/src/assessments/fixture-files/scan-fixture-files.ts,4,export const scanFixtureFiles = (files: string[]): ScannedRow[] => {,fyuld-pano,typescript
-hasExportModifier,constant,fyuld-pano/src/assessments/index-files/scan-index-files.ts,9,const hasExportModifier = (stmt: ts.Statement): boolean => {,fyuld-pano,typescript
-isDefinition,constant,fyuld-pano/src/assessments/index-files/scan-index-files.ts,14,const isDefinition = (stmt: ts.Statement): boolean =>,fyuld-pano,typescript
-countStatements,constant,fyuld-pano/src/assessments/index-files/scan-index-files.ts,22,const countStatements = (,fyuld-pano,typescript
-scanIndexFiles,constant,fyuld-pano/src/assessments/index-files/scan-index-files.ts,43,export const scanIndexFiles = (files: string[]): ScannedRow[] => {,fyuld-pano,typescript
-findDuplicateStringLiterals,constant,fyuld-pano/src/assessments/string-literals/find-duplicate-string-literals.ts,3,export const findDuplicateStringLiterals = (,fyuld-pano,typescript
-BDD_PREDEFINED_EXCEPTIONS,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,8,const BDD_PREDEFINED_EXCEPTIONS = new Set(['Given', 'When', 'Then', 'And']),fyuld-pano,typescript
-UTILITARY_PREDEFINED_EXCEPTIONS,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,9,const UTILITARY_PREDEFINED_EXCEPTIONS = new Set(['\n', '\\n']),fyuld-pano,typescript
-isLiteral,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,11,const isLiteral = (node: ts.Node): node is ts.StringLiteral =>,fyuld-pano,typescript
-isPredefinedException,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,14,const isPredefinedException = (value: string): boolean =>,fyuld-pano,typescript
-isDuplicableStringLiteral,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,19,const isDuplicableStringLiteral = (node: ts.Node): node is ts.StringLiteral =>,fyuld-pano,typescript
-isDuplicableNamedDeclaration,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,22,const isDuplicableNamedDeclaration = (,fyuld-pano,typescript
-literalValue,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,33,const literalValue = (node: ts.StringLiteral): string => `'${node.text}'`,fyuld-pano,typescript
-scanStringLiterals,constant,fyuld-pano/src/assessments/string-literals/scan-string-literals.ts,35,export const scanStringLiterals = (files: string[]): ScannedRow[] => {,fyuld-pano,typescript
-parseFeature,constant,fyuld-pano/src/languages/gherkin/parser.ts,8,export const parseFeature = (source: string): GherkinDocument => {,fyuld-pano,typescript
-parseTerraformDeclarations,constant,fyuld-pano/src/languages/terraform/parser.ts,15,export const parseTerraformDeclarations = (,fyuld-pano,typescript
-parseTerraformStringLiterals,constant,fyuld-pano/src/languages/terraform/parser.ts,64,export const parseTerraformStringLiterals = (,fyuld-pano,typescript
-fromRange,constant,fyuld-pano/src/languages/typescript/comments.ts,11,const fromRange = (range: ts.CommentRange, sourceText: string): Comment => ({,fyuld-pano,typescript
-getLeadingComments,constant,fyuld-pano/src/languages/typescript/comments.ts,22,export const getLeadingComments = (,fyuld-pano,typescript
-getTrailingComments,constant,fyuld-pano/src/languages/typescript/comments.ts,30,export const getTrailingComments = (,fyuld-pano,typescript
-getAllComments,constant,fyuld-pano/src/languages/typescript/comments.ts,38,export const getAllComments = (sourceFile: ts.SourceFile): Comment[] => {,fyuld-pano,typescript
-inferScriptKind,constant,fyuld-pano/src/languages/typescript/parser.ts,3,const inferScriptKind = (fileName: string): ts.ScriptKind => {,fyuld-pano,typescript
-parseTypeScript,constant,fyuld-pano/src/languages/typescript/parser.ts,10,export const parseTypeScript = (,fyuld-pano,typescript
-getSyntacticErrors,constant,fyuld-pano/src/languages/typescript/parser.ts,22,export const getSyntacticErrors = (,fyuld-pano,typescript
-countCodeLines,constant,fyuld-pano/src/languages/typescript/parser.ts,28,export const countCodeLines = (sourceFile: ts.SourceFile): number => {,fyuld-pano,typescript
-evaluateConstraint,constant,fyuld-pano/src/principles/evaluate-constraint.ts,3,export const evaluateConstraint = (,fyuld-pano,typescript
-remarksOf,constant,fyuld-pano/src/principles/render-remarks.ts,4,export const remarksOf = (verdicts: PrincipleVerdict[]): Remark[] =>,fyuld-pano,typescript
-runPrinciples,constant,fyuld-pano/src/principles/run-principles.ts,11,export const runPrinciples = (,fyuld-pano,typescript
-renderCsv,constant,fyuld-pano/src/render/render-csv.ts,4,export const renderCsv = (rows: Finding[]): string => {,fyuld-pano,typescript
-cell,constant,fyuld-pano/src/render/render-helpers.ts,4,export const cell = (value: unknown): string => {,fyuld-pano,typescript
-columns,constant,fyuld-pano/src/render/render-helpers.ts,10,export const columns = (rows: Finding[]): string[] => {,fyuld-pano,typescript
-renderJson,constant,fyuld-pano/src/render/render-json.ts,3,export const renderJson = (rows: Finding[]): string =>,fyuld-pano,typescript
-renderMd,constant,fyuld-pano/src/render/render-md.ts,4,export const renderMd = (rows: Finding[]): string => {,fyuld-pano,typescript
-principleSchema,constant,fyuld-pano-cli/src/compile-principle.ts,7,const principleSchema = JSON.parse(,fyuld-pano-cli,typescript
-compilePrinciple,constant,fyuld-pano-cli/src/compile-principle.ts,14,export const compilePrinciple = (md: string): Principle =>,fyuld-pano-cli,typescript
-setPretty,constant,fyuld-pano-cli/src/format.ts,3,export const setPretty = (b: boolean): void => {,fyuld-pano-cli,typescript
-styled,constant,fyuld-pano-cli/src/format.ts,7,export const styled = (codes: string, text: string): string =>,fyuld-pano-cli,typescript
-SuperDuper,constant,fyuld-pano-cli/src/format.ts,10,export const SuperDuper = 1,fyuld-pano-cli,typescript
-SuperDuper,constant,fyuld-pano-cli/src/pano.ts,29,export const SuperDuper = 2,fyuld-pano-cli,typescript
-SKIP_DIRS,constant,fyuld-pano-cli/src/pano.ts,31,const SKIP_DIRS = new Set(['node_modules', 'dist', '.terraform']),fyuld-pano-cli,typescript
-SOURCE_EXTENSIONS,constant,fyuld-pano-cli/src/pano.ts,32,const SOURCE_EXTENSIONS = new Set(['.ts']),fyuld-pano-cli,typescript
-CONFIG_FILENAME,constant,fyuld-pano-cli/src/pano.ts,33,const CONFIG_FILENAME = '.pano/pano.config.json',fyuld-pano-cli,typescript
-METRICS_DIR,constant,fyuld-pano-cli/src/pano.ts,34,const METRICS_DIR = '.metrics',fyuld-pano-cli,typescript
-OCCURRENCES_DIR,constant,fyuld-pano-cli/src/pano.ts,35,const OCCURRENCES_DIR = path.join(METRICS_DIR, '.occurences'),fyuld-pano-cli,typescript
-FINDINGS_DIR,constant,fyuld-pano-cli/src/pano.ts,36,const FINDINGS_DIR = path.join(METRICS_DIR, '.findings'),fyuld-pano-cli,typescript
-REMARKS_DIR,constant,fyuld-pano-cli/src/pano.ts,37,const REMARKS_DIR = path.join(METRICS_DIR, '.remarks'),fyuld-pano-cli,typescript
-TASKS_DIR,constant,fyuld-pano-cli/src/pano.ts,38,const TASKS_DIR = '.tasks',fyuld-pano-cli,typescript
-DefaultSpecsDirectory,constant,fyuld-pano-cli/src/pano.ts,39,const DefaultSpecsDirectory = 'specs',fyuld-pano-cli,typescript
-DefaultBddFeaturesDirectory,constant,fyuld-pano-cli/src/pano.ts,40,const DefaultBddFeaturesDirectory = 'features',fyuld-pano-cli,typescript
-DefaultStoriesDirectory,constant,fyuld-pano-cli/src/pano.ts,41,const DefaultStoriesDirectory = 'stories',fyuld-pano-cli,typescript
-DefaultBddFeatureExtension,constant,fyuld-pano-cli/src/pano.ts,42,const DefaultBddFeatureExtension = '.feature',fyuld-pano-cli,typescript
-DefaultPrinciplesDirectory,constant,fyuld-pano-cli/src/pano.ts,43,const DefaultPrinciplesDirectory = 'principles',fyuld-pano-cli,typescript
-DefaultCompiledPrinciplesDirectory,constant,fyuld-pano-cli/src/pano.ts,44,const DefaultCompiledPrinciplesDirectory = '.compiled-principles',fyuld-pano-cli,typescript
-expandGlob,constant,fyuld-pano-cli/src/pano.ts,46,const expandGlob = (pattern: string, baseDir: string): string[] => {,fyuld-pano-cli,typescript
-walkSourceFiles,constant,fyuld-pano-cli/src/pano.ts,77,const walkSourceFiles = (dir: string, acc: string[] = []): string[] => {,fyuld-pano-cli,typescript
-findConfig,constant,fyuld-pano-cli/src/pano.ts,92,const findConfig = (startDir: string): string => {,fyuld-pano-cli,typescript
-loadConfig,constant,fyuld-pano-cli/src/pano.ts,105,const loadConfig = (configPath: string): PanOpticumConfig =>,fyuld-pano-cli,typescript
-resolveFiles,constant,fyuld-pano-cli/src/pano.ts,108,const resolveFiles = (,fyuld-pano-cli,typescript
-runAnalyze,constant,fyuld-pano-cli/src/pano.ts,125,const runAnalyze = (,fyuld-pano-cli,typescript
-runAssess,constant,fyuld-pano-cli/src/pano.ts,145,const runAssess = (,fyuld-pano-cli,typescript
-evaluatePrinciples,constant,fyuld-pano-cli/src/pano.ts,164,const evaluatePrinciples = (,fyuld-pano-cli,typescript
-printHelp,constant,fyuld-pano-cli/src/pano.ts,233,const printHelp = (): void => {,fyuld-pano-cli,typescript
-rawArgs,constant,fyuld-pano-cli/src/pano.ts,251,const rawArgs = process.argv.slice(2),fyuld-pano-cli,typescript
-positional,constant,fyuld-pano-cli/src/pano.ts,253,const positional: string[] = [],fyuld-pano-cli,typescript
-isGenerateSubcommand,constant,fyuld-pano-cli/src/pano.ts,266,const isGenerateSubcommand = subcommand === 'generate' || subcommand === 'gen',fyuld-pano-cli,typescript
-principlesCompile,constant,fyuld-pano-cli/src/principles-compile.ts,12,export const principlesCompile = (,fyuld-pano-cli,typescript
-principlesVerify,constant,fyuld-pano-cli/src/principles-verify.ts,13,export const principlesVerify = (,fyuld-pano-cli,typescript
-BOX_INNER,constant,fyuld-pano-cli/src/render-markdown-ansi.ts,3,const BOX_INNER = Math.max(40, (process.stdout.columns ?? 80) - 4),fyuld-pano-cli,typescript
-fmtScoreRow,constant,fyuld-pano-cli/src/render-markdown-ansi.ts,5,const fmtScoreRow = (label: string, value: string): string => {,fyuld-pano-cli,typescript
-renderBox,constant,fyuld-pano-cli/src/render-markdown-ansi.ts,10,const renderBox = (,fyuld-pano-cli,typescript
-stripBold,constant,fyuld-pano-cli/src/render-markdown-ansi.ts,28,const stripBold = (s: string): string => s.replace(/\*\*/g, ''),fyuld-pano-cli,typescript
-renderMarkdownAsAnsi,constant,fyuld-pano-cli/src/render-markdown-ansi.ts,30,export const renderMarkdownAsAnsi = (md: string): void => {,fyuld-pano-cli,typescript
-PRINCIPLE_SCHEMA,constant,fyuld-pano-cli/src/render-run-report.ts,5,const PRINCIPLE_SCHEMA: MdSchema = {,fyuld-pano-cli,typescript
-SCORES_SCHEMA,constant,fyuld-pano-cli/src/render-run-report.ts,17,const SCORES_SCHEMA: MdSchema = {,fyuld-pano-cli,typescript
-remarkLine,constant,fyuld-pano-cli/src/render-run-report.ts,28,const remarkLine = (remark: ViolationRow): string => {,fyuld-pano-cli,typescript
-renderPrinciple,constant,fyuld-pano-cli/src/render-run-report.ts,40,const renderPrinciple = (verdict: PrincipleVerdict): string => {,fyuld-pano-cli,typescript
-renderScores,constant,fyuld-pano-cli/src/render-run-report.ts,67,const renderScores = (,fyuld-pano-cli,typescript
-renderRunReport,constant,fyuld-pano-cli/src/render-run-report.ts,93,export const renderRunReport = (verdicts: PrincipleVerdict[]): string => {,fyuld-pano-cli,typescript
-writeFindings,constant,fyuld-pano-cli/src/write-findings.ts,8,export const writeFindings = (,fyuld-pano-cli,typescript
-writeRemarks,constant,fyuld-pano-cli/src/write-remarks.ts,6,export const writeRemarks = (,fyuld-pano-cli,typescript
+principleSchema,constant,fyuld-pano/src/compile-principle.ts,7,const principleSchema = JSON.parse(,fyuld-pano,typescript
+compilePrinciple,constant,fyuld-pano/src/compile-principle.ts,14,export const compilePrinciple = (md: string): Principle =>,fyuld-pano,typescript
+setPretty,constant,fyuld-pano/src/format.ts,3,export const setPretty = (b: boolean): void => {,fyuld-pano,typescript
+styled,constant,fyuld-pano/src/format.ts,7,export const styled = (codes: string, text: string): string =>,fyuld-pano,typescript
+SuperDuper,constant,fyuld-pano/src/format.ts,10,export const SuperDuper = 1,fyuld-pano,typescript
+SuperDuper,constant,fyuld-pano/src/pano.ts,34,export const SuperDuper = 2,fyuld-pano,typescript
+SKIP_DIRS,constant,fyuld-pano/src/pano.ts,36,const SKIP_DIRS = new Set(['node_modules', 'dist', '.terraform']),fyuld-pano,typescript
+SOURCE_EXTENSIONS,constant,fyuld-pano/src/pano.ts,37,const SOURCE_EXTENSIONS = new Set(['.ts']),fyuld-pano,typescript
+CONFIG_FILENAME,constant,fyuld-pano/src/pano.ts,38,const CONFIG_FILENAME = '.pano/pano.config.json',fyuld-pano,typescript
+METRICS_DIR,constant,fyuld-pano/src/pano.ts,39,const METRICS_DIR = '.metrics',fyuld-pano,typescript
+OCCURRENCES_DIR,constant,fyuld-pano/src/pano.ts,40,const OCCURRENCES_DIR = path.join(METRICS_DIR, '.occurences'),fyuld-pano,typescript
+FINDINGS_DIR,constant,fyuld-pano/src/pano.ts,41,const FINDINGS_DIR = path.join(METRICS_DIR, '.findings'),fyuld-pano,typescript
+REMARKS_DIR,constant,fyuld-pano/src/pano.ts,42,const REMARKS_DIR = path.join(METRICS_DIR, '.remarks'),fyuld-pano,typescript
+TASKS_DIR,constant,fyuld-pano/src/pano.ts,43,const TASKS_DIR = '.tasks',fyuld-pano,typescript
+DefaultSpecsDirectory,constant,fyuld-pano/src/pano.ts,44,const DefaultSpecsDirectory = 'specs',fyuld-pano,typescript
+DefaultBddFeaturesDirectory,constant,fyuld-pano/src/pano.ts,45,const DefaultBddFeaturesDirectory = 'features',fyuld-pano,typescript
+DefaultStoriesDirectory,constant,fyuld-pano/src/pano.ts,46,const DefaultStoriesDirectory = 'stories',fyuld-pano,typescript
+DefaultBddFeatureExtension,constant,fyuld-pano/src/pano.ts,47,const DefaultBddFeatureExtension = '.feature',fyuld-pano,typescript
+DefaultPrinciplesDirectory,constant,fyuld-pano/src/pano.ts,48,const DefaultPrinciplesDirectory = 'principles',fyuld-pano,typescript
+DefaultCompiledPrinciplesDirectory,constant,fyuld-pano/src/pano.ts,49,const DefaultCompiledPrinciplesDirectory = '.compiled-principles',fyuld-pano,typescript
+expandGlob,constant,fyuld-pano/src/pano.ts,51,const expandGlob = (pattern: string, baseDir: string): string[] => {,fyuld-pano,typescript
+walkSourceFiles,constant,fyuld-pano/src/pano.ts,82,const walkSourceFiles = (dir: string, acc: string[] = []): string[] => {,fyuld-pano,typescript
+findConfig,constant,fyuld-pano/src/pano.ts,97,const findConfig = (startDir: string): string => {,fyuld-pano,typescript
+loadConfig,constant,fyuld-pano/src/pano.ts,110,const loadConfig = (configPath: string): PanOpticumConfig =>,fyuld-pano,typescript
+resolveFiles,constant,fyuld-pano/src/pano.ts,113,const resolveFiles = (,fyuld-pano,typescript
+runAnalyze,constant,fyuld-pano/src/pano.ts,130,const runAnalyze = (,fyuld-pano,typescript
+runAssess,constant,fyuld-pano/src/pano.ts,150,const runAssess = (,fyuld-pano,typescript
+evaluatePrinciples,constant,fyuld-pano/src/pano.ts,169,const evaluatePrinciples = (,fyuld-pano,typescript
+printHelp,constant,fyuld-pano/src/pano.ts,238,const printHelp = (): void => {,fyuld-pano,typescript
+rawArgs,constant,fyuld-pano/src/pano.ts,256,const rawArgs = process.argv.slice(2),fyuld-pano,typescript
+positional,constant,fyuld-pano/src/pano.ts,258,const positional: string[] = [],fyuld-pano,typescript
+isGenerateSubcommand,constant,fyuld-pano/src/pano.ts,271,const isGenerateSubcommand = subcommand === 'generate' || subcommand === 'gen',fyuld-pano,typescript
+principlesCompile,constant,fyuld-pano/src/principles-compile.ts,12,export const principlesCompile = (,fyuld-pano,typescript
+principlesVerify,constant,fyuld-pano/src/principles-verify.ts,13,export const principlesVerify = (,fyuld-pano,typescript
+NOIR_ON_COTTON,constant,fyuld-pano/src/render-markdown-ansi.ts,3,const NOIR_ON_COTTON = '30;48;2;245;245;240' // black text, cotton background,fyuld-pano,typescript
+HEADING_STYLES,constant,fyuld-pano/src/render-markdown-ansi.ts,5,const HEADING_STYLES: Record<number, string> = {,fyuld-pano,typescript
+headingToAnsi,constant,fyuld-pano/src/render-markdown-ansi.ts,11,const headingToAnsi = (line: string): string | undefined => {,fyuld-pano,typescript
+renderMarkdownAsAnsi,constant,fyuld-pano/src/render-markdown-ansi.ts,18,export const renderMarkdownAsAnsi = (md: string): void => {,fyuld-pano,typescript
+PRINCIPLE_REPORT_SCHEMA,constant,fyuld-pano/src/render-run-report.ts,5,const PRINCIPLE_REPORT_SCHEMA: MdSchema = {,fyuld-pano,typescript
+PRINCIPLE_TASK_SCHEMA,constant,fyuld-pano/src/render-run-report.ts,11,const PRINCIPLE_TASK_SCHEMA: MdSchema = {,fyuld-pano,typescript
+SCORES_SCHEMA,constant,fyuld-pano/src/render-run-report.ts,23,const SCORES_SCHEMA: MdSchema = {,fyuld-pano,typescript
+remarkLine,constant,fyuld-pano/src/render-run-report.ts,32,const remarkLine = (remark: ViolationRow): string => {,fyuld-pano,typescript
+renderPrinciple,constant,fyuld-pano/src/render-run-report.ts,44,const renderPrinciple = (,fyuld-pano,typescript
+renderScores,constant,fyuld-pano/src/render-run-report.ts,84,const renderScores = (,fyuld-pano,typescript
+renderRunReport,constant,fyuld-pano/src/render-run-report.ts,104,export const renderRunReport = (,fyuld-pano,typescript
+writeFindings,constant,fyuld-pano/src/write-findings.ts,8,export const writeFindings = (,fyuld-pano,typescript
+writeRemarks,constant,fyuld-pano/src/write-remarks.ts,6,export const writeRemarks = (,fyuld-pano,typescript
 NotApplicable,constant,fyuld-pano-dm/src/entities/common.ts,1,export const NotApplicable = 'not-applicable',fyuld-pano-dm,typescript
-aggregateErrors,constant,fyuld-pano-errors/src/aggregateErrors.ts,4,export const aggregateErrors = (files: string[]): Metric[] =>,fyuld-pano-errors,typescript
-aggregateThrows,constant,fyuld-pano-errors/src/aggregateThrows.ts,4,export const aggregateThrows = (files: string[]): Metric[] =>,fyuld-pano-errors,typescript
+createErrorUrn,constant,fyuld-pano-dm/src/errors/urns.ts,7,export const createErrorUrn = (,fyuld-pano-dm,typescript
+FINDING_SPECS,constant,fyuld-pano-engine/src/assessments/collect-findings.ts,15,const FINDING_SPECS: FindingSpec[] = [,fyuld-pano-engine,typescript
+collectFindings,constant,fyuld-pano-engine/src/assessments/collect-findings.ts,30,export const collectFindings = (,fyuld-pano-engine,typescript
+LANGUAGE_BY_EXT,constant,fyuld-pano-engine/src/assessments/collect-occurrences.ts,24,const LANGUAGE_BY_EXT: Record<string, string> = {,fyuld-pano-engine,typescript
+enrich,constant,fyuld-pano-engine/src/assessments/collect-occurrences.ts,31,const enrich = (rows: ScannedRow[], repoRoot: string): Occurrence[] =>,fyuld-pano-engine,typescript
+DECLARATION_BUCKETS,constant,fyuld-pano-engine/src/assessments/collect-occurrences.ts,48,const DECLARATION_BUCKETS = [,fyuld-pano-engine,typescript
+collectOccurrences,constant,fyuld-pano-engine/src/assessments/collect-occurrences.ts,57,export const collectOccurrences = (,fyuld-pano-engine,typescript
+findComplexConditionalExpressions,constant,fyuld-pano-engine/src/assessments/conditional-expressions/find-complex-conditional-expressions.ts,3,export const findComplexConditionalExpressions = (,fyuld-pano-engine,typescript
+isLogicalBinaryExpression,constant,fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts,7,const isLogicalBinaryExpression = (,fyuld-pano-engine,typescript
+countTerms,constant,fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts,14,const countTerms = (node: ts.Expression): number => {,fyuld-pano-engine,typescript
+scanConditionalExpressions,constant,fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts,24,export const scanConditionalExpressions = (files: string[]): ScannedRow[] => {,fyuld-pano-engine,typescript
+findDuplicateDeclarations,constant,fyuld-pano-engine/src/assessments/duplicate-declarations/find-duplicate-declarations.ts,3,export const findDuplicateDeclarations = (,fyuld-pano-engine,typescript
+lineOf,constant,fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts,16,const lineOf = (node: ts.Node, sourceFile: ts.SourceFile): number =>,fyuld-pano-engine,typescript
+codeAt,constant,fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts,19,const codeAt = (line: number, lines: string[]): string =>,fyuld-pano-engine,typescript
+isAnonymousDeclaration,constant,fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts,22,const isAnonymousDeclaration = (,fyuld-pano-engine,typescript
+scanDeclarations,constant,fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts,26,export const scanDeclarations = (files: string[]): ScannedRow[] => {,fyuld-pano-engine,typescript
+scanFixtureFiles,constant,fyuld-pano-engine/src/assessments/fixture-files/scan-fixture-files.ts,4,export const scanFixtureFiles = (files: string[]): ScannedRow[] => {,fyuld-pano-engine,typescript
+hasExportModifier,constant,fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts,9,const hasExportModifier = (stmt: ts.Statement): boolean => {,fyuld-pano-engine,typescript
+isDefinition,constant,fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts,14,const isDefinition = (stmt: ts.Statement): boolean =>,fyuld-pano-engine,typescript
+countStatements,constant,fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts,22,const countStatements = (,fyuld-pano-engine,typescript
+scanIndexFiles,constant,fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts,43,export const scanIndexFiles = (files: string[]): ScannedRow[] => {,fyuld-pano-engine,typescript
+findDuplicateStringLiterals,constant,fyuld-pano-engine/src/assessments/string-literals/find-duplicate-string-literals.ts,3,export const findDuplicateStringLiterals = (,fyuld-pano-engine,typescript
+TEST_AND_BDD_FUNCTIONS,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,8,const TEST_AND_BDD_FUNCTIONS = new Set([,fyuld-pano-engine,typescript
+UTILITARY_PREDEFINED_EXCEPTIONS,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,17,const UTILITARY_PREDEFINED_EXCEPTIONS = new Set(['\n', '\\n', '']),fyuld-pano-engine,typescript
+isLiteral,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,19,const isLiteral = (node: ts.Node): node is ts.StringLiteral =>,fyuld-pano-engine,typescript
+isTestOrBddFunction,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,22,const isTestOrBddFunction = (name: string): boolean => {,fyuld-pano-engine,typescript
+isPredefinedException,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,30,const isPredefinedException = (value: string): boolean =>,fyuld-pano-engine,typescript
+isDuplicableStringLiteral,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,33,const isDuplicableStringLiteral = (node: ts.Node): node is ts.StringLiteral =>,fyuld-pano-engine,typescript
+isDuplicableNamedDeclaration,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,36,const isDuplicableNamedDeclaration = (,fyuld-pano-engine,typescript
+literalValue,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,47,const literalValue = (node: ts.StringLiteral): string => `'${node.text}'`,fyuld-pano-engine,typescript
+scanStringLiterals,constant,fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts,49,export const scanStringLiterals = (files: string[]): ScannedRow[] => {,fyuld-pano-engine,typescript
+parseFeature,constant,fyuld-pano-engine/src/languages/gherkin/parser.ts,4,export const parseFeature = (source: string): GherkinDocument => {,fyuld-pano-engine,typescript
+parseTerraformDeclarations,constant,fyuld-pano-engine/src/languages/terraform/parser.ts,15,export const parseTerraformDeclarations = (,fyuld-pano-engine,typescript
+parseTerraformStringLiterals,constant,fyuld-pano-engine/src/languages/terraform/parser.ts,64,export const parseTerraformStringLiterals = (,fyuld-pano-engine,typescript
+fromRange,constant,fyuld-pano-engine/src/languages/typescript/comments.ts,11,const fromRange = (range: ts.CommentRange, sourceText: string): Comment => ({,fyuld-pano-engine,typescript
+getLeadingComments,constant,fyuld-pano-engine/src/languages/typescript/comments.ts,22,export const getLeadingComments = (,fyuld-pano-engine,typescript
+getTrailingComments,constant,fyuld-pano-engine/src/languages/typescript/comments.ts,30,export const getTrailingComments = (,fyuld-pano-engine,typescript
+getAllComments,constant,fyuld-pano-engine/src/languages/typescript/comments.ts,38,export const getAllComments = (sourceFile: ts.SourceFile): Comment[] => {,fyuld-pano-engine,typescript
+inferScriptKind,constant,fyuld-pano-engine/src/languages/typescript/parser.ts,3,const inferScriptKind = (fileName: string): ts.ScriptKind => {,fyuld-pano-engine,typescript
+parseTypeScript,constant,fyuld-pano-engine/src/languages/typescript/parser.ts,10,export const parseTypeScript = (,fyuld-pano-engine,typescript
+getSyntacticErrors,constant,fyuld-pano-engine/src/languages/typescript/parser.ts,22,export const getSyntacticErrors = (,fyuld-pano-engine,typescript
+countCodeLines,constant,fyuld-pano-engine/src/languages/typescript/parser.ts,28,export const countCodeLines = (sourceFile: ts.SourceFile): number => {,fyuld-pano-engine,typescript
+evaluateConstraint,constant,fyuld-pano-engine/src/principles/evaluate-constraint.ts,3,export const evaluateConstraint = (,fyuld-pano-engine,typescript
+remarksOf,constant,fyuld-pano-engine/src/principles/render-remarks.ts,4,export const remarksOf = (verdicts: PrincipleVerdict[]): Remark[] =>,fyuld-pano-engine,typescript
+runPrinciples,constant,fyuld-pano-engine/src/principles/run-principles.ts,11,export const runPrinciples = (,fyuld-pano-engine,typescript
+renderCsv,constant,fyuld-pano-engine/src/render/render-csv.ts,4,export const renderCsv = (rows: Finding[]): string => {,fyuld-pano-engine,typescript
+cell,constant,fyuld-pano-engine/src/render/render-helpers.ts,4,export const cell = (value: unknown): string => {,fyuld-pano-engine,typescript
+columns,constant,fyuld-pano-engine/src/render/render-helpers.ts,10,export const columns = (rows: Finding[]): string[] => {,fyuld-pano-engine,typescript
+renderJson,constant,fyuld-pano-engine/src/render/render-json.ts,3,export const renderJson = (rows: Finding[]): string =>,fyuld-pano-engine,typescript
+renderMd,constant,fyuld-pano-engine/src/render/render-md.ts,4,export const renderMd = (rows: Finding[]): string => {,fyuld-pano-engine,typescript
+aggregateErrors,constant,fyuld-pano-errors/src/aggregateErrors.ts,3,export const aggregateErrors = (files: string[]) =>,fyuld-pano-errors,typescript
+aggregateThrows,constant,fyuld-pano-errors/src/aggregateThrows.ts,3,export const aggregateThrows = (files: string[]) =>,fyuld-pano-errors,typescript
+lineOf,constant,fyuld-pano-errors/src/class-constructors.ts,21,const lineOf = (ast: ts.SourceFile, node: ts.Node): number =>,fyuld-pano-errors,typescript
+baseNameOf,constant,fyuld-pano-errors/src/class-constructors.ts,24,const baseNameOf = (expression: ts.Expression): string | undefined => {,fyuld-pano-errors,typescript
+extendsNameOf,constant,fyuld-pano-errors/src/class-constructors.ts,30,const extendsNameOf = (node: ts.ClassDeclaration): string | undefined => {,fyuld-pano-errors,typescript
+accessorOf,constant,fyuld-pano-errors/src/class-constructors.ts,38,const accessorOf = (node: ts.ClassDeclaration): ClassConstructorAccessor => {,fyuld-pano-errors,typescript
+categoryOf,constant,fyuld-pano-errors/src/class-constructors.ts,47,const categoryOf = (,fyuld-pano-errors,typescript
+collectClassConstructors,constant,fyuld-pano-errors/src/class-constructors.ts,62,export const collectClassConstructors = (,fyuld-pano-errors,typescript
 nameLooksLikeError,constant,fyuld-pano-errors/src/error-declarations.ts,12,const nameLooksLikeError = (name: string): boolean => name.endsWith("Error");,fyuld-pano-errors,typescript
 lineOf,constant,fyuld-pano-errors/src/error-declarations.ts,14,const lineOf = (sourceFile: ts.SourceFile, node: ts.Node): number =>,fyuld-pano-errors,typescript
 aggregateErrorDeclarations,constant,fyuld-pano-errors/src/error-declarations.ts,17,export const aggregateErrorDeclarations = (,fyuld-pano-errors,typescript

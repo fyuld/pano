@@ -1,11 +1,11 @@
 [
   {
-    "kind": "if",
-    "condition": "1 === 1 && 2 === 2",
+    "kind": "ternary",
+    "condition": "threshold !== undefined && cost <= threshold",
     "numTerms": 2,
-    "file": "fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts",
-    "line": 8,
-    "code": "if (1 === 1 && 2 === 2) {",
+    "file": "fyuld-pano/src/render-run-report.ts",
+    "line": 62,
+    "code": "threshold !== undefined && cost <= threshold",
     "package": "fyuld-pano",
     "language": "typescript"
   }

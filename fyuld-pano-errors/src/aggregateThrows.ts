@@ -1,7 +1,6 @@
-import { Metric } from "@fyuld/pano-dm";
 import { collectErrorEntries } from "./errors";
 
-export const aggregateThrows = (files: string[]): Metric[] =>
+export const aggregateThrows = (files: string[]) =>
   collectErrorEntries(files).flatMap((entry) =>
     entry.thrownAt.map((at) => ({
       label: entry.name,

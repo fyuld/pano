@@ -1,1 +1,0 @@
-{"version":3,"file":"finding-error.d.ts","sourceRoot":"","sources":["../src/finding-error.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAA+B,MAAM,YAAY,CAAA;AAEpE,qBAAa,YAAa,SAAQ,UAAU;IAC1C,SAAS,aAAa,MAAM,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM;IAUpD,MAAM,CAAC,aAAa,CAAC,MAAM,EAAE,MAAM,GAAG,YAAY;CAGnD"}

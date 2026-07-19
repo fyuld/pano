@@ -1,6 +1,6 @@
 {
   "name": "@fyuld/pano-dm",
-  "version": "0.3.2",
+  "version": "0.5.0",
   "description": "Logical Datamodel for Panopticum",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@fyuld/ldm": "^0.1.3"
+  "peerDependencies": {
+    "@fyuld/ldm": "^0.9.0"
   }
 }

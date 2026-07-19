@@ -1,14 +1,14 @@
 [
   {
-    "file": "fyuld-pano/src/assessments/fixture-files/index.ts",
+    "file": "fyuld-pano-engine/src/assessments/fixture-files/index.ts",
     "line": "not-applicable",
-    "package": "fyuld-pano",
+    "package": "fyuld-pano-engine",
     "language": "typescript"
   },
   {
-    "file": "fyuld-pano/src/assessments/fixture-files/scan-fixture-files.ts",
+    "file": "fyuld-pano-engine/src/assessments/fixture-files/scan-fixture-files.ts",
     "line": "not-applicable",
-    "package": "fyuld-pano",
+    "package": "fyuld-pano-engine",
     "language": "typescript"
   }
 ]

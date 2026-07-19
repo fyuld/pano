@@ -2,19 +2,28 @@
   {
     "name": "ConfigError",
     "kind": "class",
-    "file": "fyuld-pano-cli/src/config-error.ts",
+    "file": "fyuld-pano/src/config-error.ts",
     "line": 3,
     "code": "export class ConfigError extends FyuldError {",
-    "package": "fyuld-pano-cli",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "FindingError",
     "kind": "class",
-    "file": "fyuld-pano-cli/src/finding-error.ts",
+    "file": "fyuld-pano/src/finding-error.ts",
     "line": 3,
     "code": "export class FindingError extends FyuldError {",
-    "package": "fyuld-pano-cli",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "PanoError",
+    "kind": "class",
+    "file": "fyuld-pano-dm/src/errors/pano-error.ts",
+    "line": 4,
+    "code": "export class PanoError extends FyuldError {",
+    "package": "fyuld-pano-dm",
     "language": "typescript"
   }
 ]

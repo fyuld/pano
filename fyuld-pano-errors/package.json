@@ -23,7 +23,9 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json}\""
   },
   "dependencies": {
-    "@fyuld/pano-dm": "^0.3.2",
+    "@fyuld/pano-dm": "^0.5.0"
+  },
+  "peerDependencies": {
     "typescript": "^5.9.2"
   },
   "devDependencies": {
