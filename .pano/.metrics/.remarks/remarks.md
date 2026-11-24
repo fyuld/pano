@@ -12,11 +12,13 @@
 
 # Principle — Clear Conditional Purpose: 1 Remarks
 
+Conditional expressions should be clear to follow and simple to understand.
+
 .pano/principles/ClearConditionalPurpose.md
 
 ## Remarks
 
-- #1 `threshold !== undefined && cost <= threshold` fyuld-pano/src/render-run-report.ts:62
+- #1 `threshold !== undefined && cost <= threshold` fyuld-pano/src/cli/render-run-report.ts:63
 
 ---
 

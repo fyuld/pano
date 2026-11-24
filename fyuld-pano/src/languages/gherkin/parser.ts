@@ -1,5 +1,5 @@
 import type { GherkinDocument } from '@cucumber/messages'
-import { PanoError } from '@fyuld/pano-dm'
+import { PanoError } from '../../datamodel'
 
 export const parseFeature = (source: string): GherkinDocument => {
   let gherkin: typeof import('@cucumber/gherkin')

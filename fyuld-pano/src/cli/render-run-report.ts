@@ -1,10 +1,11 @@
 import { renderMarkdownWithSchema, MdSchema } from '@fyuld/mdad'
 import { JsonObject } from '@fyuld/ldm'
-import { PrincipleVerdict, ViolationRow } from '@fyuld/pano-engine'
+import { PrincipleVerdict } from '../principles/run-principles'
+import { ViolationRow } from '../principles/violation-to-be-renamed-to-remark'
 
 const PRINCIPLE_REPORT_SCHEMA: MdSchema = {
   heading: { from: '#' },
-  path: { from: '# / text()', optional: true },
+  body: { from: '# / text()', optional: true },
   remarks: { from: '# / ## Remarks / items()', optional: true },
 }
 
@@ -50,7 +51,7 @@ const renderPrinciple = (
     const clearJson: Record<string, unknown> = {
       heading: `Principle — ${p.name}: All Clean`,
     }
-    if (verdict.mdFile) clearJson.path = verdict.mdFile
+    if (verdict.mdFile) clearJson.body = verdict.mdFile
     return renderMarkdownWithSchema(
       clearJson as unknown as JsonObject,
       PRINCIPLE_REPORT_SCHEMA
@@ -70,8 +71,11 @@ const renderPrinciple = (
     json.purpose = p.purpose
     json.implementation = p.implementation
     json.defaultAgentRecommendation = p.defaultAgentRecommendation
-  } else if (verdict.mdFile) {
-    json.path = verdict.mdFile
+  } else {
+    const body = [p.description, verdict.mdFile]
+      .filter((part) => part !== undefined)
+      .join('\n\n')
+    if (body) json.body = body
   }
   const remarks = verdict.violations.map(remarkLine)
   if (remarks.length > 0) json.remarks = remarks

@@ -2,10 +2,10 @@
   {
     "name": "Step",
     "kind": "interface",
-    "file": "fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts",
+    "file": "fyuld-pano/src/bdd/generate-bdd-steps-for-ux.ts",
     "line": 3,
     "code": "interface Step {",
-    "package": "fyuld-pano-bdd",
+    "package": "fyuld-pano",
     "language": "typescript"
   }
 ]

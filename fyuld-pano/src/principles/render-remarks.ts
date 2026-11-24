@@ -1,4 +1,4 @@
-import { Remark } from '@fyuld/pano-dm'
+import { Remark } from '../datamodel'
 import { PrincipleVerdict } from './run-principles'
 
 export const remarksOf = (verdicts: PrincipleVerdict[]): Remark[] =>

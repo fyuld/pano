@@ -1,4 +1,4 @@
-import { NotApplicable } from '@fyuld/pano-dm'
+import { NotApplicable } from './common'
 
 export type ScannedRow = {
   file: string

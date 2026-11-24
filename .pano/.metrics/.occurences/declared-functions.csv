@@ -1,4 +1,3 @@
 name,kind,file,line,code,package,language
-safelyOverwriteFile,function,fyuld-pano/src/safely-overwrite-file.ts,5,export async function safelyOverwriteFile(,fyuld-pano,typescript
-generateBddStepsForUx,function,fyuld-pano-bdd/src/generate-bdd-steps-for-ux.ts,8,export function generateBddStepsForUx(featureContent: string): string {,fyuld-pano-bdd,typescript
-record,function,fyuld-pano-optics/src/record.ts,1,export function record(message: string): void {,fyuld-pano-optics,typescript
+generateBddStepsForUx,function,fyuld-pano/src/bdd/generate-bdd-steps-for-ux.ts,8,export function generateBddStepsForUx(featureContent: string): string {,fyuld-pano,typescript
+safelyOverwriteFile,function,fyuld-pano/src/cli/safely-overwrite-file.ts,5,export async function safelyOverwriteFile(,fyuld-pano,typescript

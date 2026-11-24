@@ -1,12 +1,12 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { ingestMarkdownWithSchema, MdSchema } from '@fyuld/mdad'
-import { Principle } from '@fyuld/pano-dm'
+import { Principle } from '../datamodel'
 import { FileFormat } from '@fyuld/ldm'
 
 const principleSchema = JSON.parse(
   fs.readFileSync(
-    path.join(__dirname, '..', 'schemas', 'principle.mdschema.json'),
+    path.join(__dirname, '..', '..', 'schemas', 'principle.mdschema.json'),
     FileFormat.Utf8
   )
 ) as MdSchema

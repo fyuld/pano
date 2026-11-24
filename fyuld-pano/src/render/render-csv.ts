@@ -1,4 +1,4 @@
-import { Finding } from '@fyuld/pano-dm'
+import { Finding } from '../datamodel'
 import { cell, columns } from './render-helpers'
 
 export const renderCsv = (rows: Finding[]): string => {

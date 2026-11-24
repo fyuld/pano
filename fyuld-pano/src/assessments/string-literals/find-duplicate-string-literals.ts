@@ -1,4 +1,4 @@
-import { Occurrence, Finding } from '@fyuld/pano-dm'
+import { Occurrence, Finding } from '../../datamodel'
 
 export const findDuplicateStringLiterals = (
   occurrences: Occurrence[]

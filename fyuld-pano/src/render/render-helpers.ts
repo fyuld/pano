@@ -1,4 +1,4 @@
-import { Finding } from '@fyuld/pano-dm'
+import { Finding } from '../datamodel'
 import { isNotDefined } from '@fyuld/ldm'
 
 export const cell = (value: unknown): string => {

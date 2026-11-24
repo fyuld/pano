@@ -1,19 +1,16 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { Occurrence, NotApplicable } from '@fyuld/pano-dm'
+import { Occurrence, NotApplicable } from '../datamodel'
 import { FileFormat } from '@fyuld/ldm'
-import {
-  aggregateErrors,
-  aggregateThrows,
-  collectClassConstructors,
-} from '@fyuld/pano-errors'
+import { aggregateErrors, aggregateThrows } from '../assessments/errors'
+import { collectClassConstructors } from '../assessments/class-constructors/class-constructors'
 import { parseTypeScript } from '../languages/typescript'
-import { scanIndexFiles } from './index-files'
-import { scanStringLiterals } from './string-literals'
-import { scanDeclarations } from './duplicate-declarations'
-import { scanConditionalExpressions } from './conditional-expressions'
-import { scanFixtureFiles } from './fixture-files'
-import { ScannedRow } from './scanned-row'
+import { scanIndexFiles } from '../assessments/index-files'
+import { scanStringLiterals } from '../assessments/string-literals'
+import { scanDeclarations } from '../assessments/duplicate-declarations'
+import { scanConditionalExpressions } from '../assessments/conditional-expressions'
+import { scanFixtureFiles } from '../assessments/fixture-files'
+import { ScannedRow } from '../datamodel/entities/scanned-row'
 
 export type OccurrenceBucket = {
   key: string

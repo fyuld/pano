@@ -1,7 +1,7 @@
-import { Finding, BehaviorScanner } from '@fyuld/pano-dm'
+import { Finding, BehaviorScanner } from '../datamodel'
 import { OccurrenceBucket } from './collect-occurrences'
-import { findDuplicateStringLiterals } from './string-literals'
-import { findComplexConditionalExpressions } from './conditional-expressions'
+import { findDuplicateStringLiterals } from '../assessments/string-literals'
+import { findComplexConditionalExpressions } from '../assessments/conditional-expressions'
 
 export type FindingBucket = { key: string; file: string; findings: Finding[] }
 

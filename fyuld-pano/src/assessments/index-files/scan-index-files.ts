@@ -1,10 +1,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import * as ts from 'typescript'
-import { NotApplicable } from '@fyuld/pano-dm'
+import { NotApplicable } from '../../datamodel'
 import { FileFormat } from '@fyuld/ldm'
 import { parseTypeScript } from '../../languages/typescript'
-import { ScannedRow } from '../scanned-row'
+import { ScannedRow } from '../../datamodel/entities/scanned-row'
 
 const hasExportModifier = (stmt: ts.Statement): boolean => {
   const mods = (stmt as { modifiers?: readonly ts.ModifierLike[] }).modifiers

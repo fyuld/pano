@@ -1,7 +1,7 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  roots: ['<rootDir>/tests'],
+  roots: ['<rootDir>/specs'],
   testMatch: ['**/*.test.ts', '**/*.steps.ts'],
   collectCoverageFrom: [
     'src/**/*.ts',
@@ -16,6 +16,5 @@ module.exports = {
       tsconfig: 'tsconfig.test.json'
     }]
   },
-  testTimeout: 60000,
-  passWithNoTests: true
+  testTimeout: 60000 // 60 seconds for E2E tests
 };

@@ -1,8 +1,21 @@
 [
   {
+    "label": "PanoError",
+    "file": "fyuld-pano/src/languages/gherkin/parser.ts",
+    "line": 11,
+    "instantiation": "factory",
+    "inheritancePath": [
+      "PanoError",
+      "FyuldError",
+      "Error"
+    ],
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
     "label": "ConfigError",
     "file": "fyuld-pano/src/pano.ts",
-    "line": 104,
+    "line": 105,
     "instantiation": "factory",
     "inheritancePath": [
       "ConfigError",
@@ -14,7 +27,7 @@
   },
   {
     "label": "FindingError",
-    "file": "fyuld-pano/src/write-findings.ts",
+    "file": "fyuld-pano/src/cli/write-findings.ts",
     "line": 22,
     "instantiation": "factory",
     "inheritancePath": [
@@ -23,19 +36,6 @@
       "Error"
     ],
     "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "label": "PanoError",
-    "file": "fyuld-pano-engine/src/languages/gherkin/parser.ts",
-    "line": 11,
-    "instantiation": "factory",
-    "inheritancePath": [
-      "PanoError",
-      "FyuldError",
-      "Error"
-    ],
-    "package": "fyuld-pano-engine",
     "language": "typescript"
   }
 ]

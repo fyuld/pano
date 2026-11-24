@@ -1,5 +1,5 @@
-import { NotApplicable } from '@fyuld/pano-dm'
-import { ScannedRow } from '../scanned-row'
+import { NotApplicable } from '../../datamodel'
+import { ScannedRow } from '../../datamodel/entities/scanned-row'
 
 export const scanFixtureFiles = (files: string[]): ScannedRow[] => {
   const occurrences: ScannedRow[] = []

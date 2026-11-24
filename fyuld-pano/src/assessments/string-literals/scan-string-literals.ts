@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as ts from 'typescript'
-import { ScannedRow } from '../scanned-row'
+import { ScannedRow } from '../../datamodel/entities/scanned-row'
 import { FileFormat } from '@fyuld/ldm'
 import { parseTypeScript } from '../../languages/typescript'
 import { parseTerraformStringLiterals } from '../../languages/terraform'

@@ -1,8 +1,359 @@
 [
   {
+    "name": "lineOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/class-constructors/class-constructors.ts",
+    "line": 21,
+    "code": "const lineOf = (ast: ts.SourceFile, node: ts.Node): number =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "baseNameOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/class-constructors/class-constructors.ts",
+    "line": 24,
+    "code": "const baseNameOf = (expression: ts.Expression): string | undefined => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "extendsNameOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/class-constructors/class-constructors.ts",
+    "line": 30,
+    "code": "const extendsNameOf = (node: ts.ClassDeclaration): string | undefined => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "accessorOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/class-constructors/class-constructors.ts",
+    "line": 38,
+    "code": "const accessorOf = (node: ts.ClassDeclaration): ClassConstructorAccessor => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "categoryOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/class-constructors/class-constructors.ts",
+    "line": 47,
+    "code": "const categoryOf = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "collectClassConstructors",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/class-constructors/class-constructors.ts",
+    "line": 62,
+    "code": "export const collectClassConstructors = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "findComplexConditionalExpressions",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/conditional-expressions/find-complex-conditional-expressions.ts",
+    "line": 3,
+    "code": "export const findComplexConditionalExpressions = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isLogicalBinaryExpression",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts",
+    "line": 7,
+    "code": "const isLogicalBinaryExpression = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "countTerms",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts",
+    "line": 14,
+    "code": "const countTerms = (node: ts.Expression): number => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "scanConditionalExpressions",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts",
+    "line": 24,
+    "code": "export const scanConditionalExpressions = (files: string[]): ScannedRow[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "findDuplicateDeclarations",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/find-duplicate-declarations.ts",
+    "line": 3,
+    "code": "export const findDuplicateDeclarations = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "lineOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts",
+    "line": 16,
+    "code": "const lineOf = (node: ts.Node, sourceFile: ts.SourceFile): number =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "codeAt",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts",
+    "line": 19,
+    "code": "const codeAt = (line: number, lines: string[]): string =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isAnonymousDeclaration",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts",
+    "line": 22,
+    "code": "const isAnonymousDeclaration = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "scanDeclarations",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/duplicate-declarations/scan-declarations.ts",
+    "line": 26,
+    "code": "export const scanDeclarations = (files: string[]): ScannedRow[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "aggregateErrors",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/aggregateErrors.ts",
+    "line": 3,
+    "code": "export const aggregateErrors = (files: string[]) =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "aggregateThrows",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/aggregateThrows.ts",
+    "line": 3,
+    "code": "export const aggregateThrows = (files: string[]) =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "nameLooksLikeError",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/error-declarations.ts",
+    "line": 12,
+    "code": "const nameLooksLikeError = (name: string): boolean => name.endsWith(\"Error\");",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "lineOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/error-declarations.ts",
+    "line": 14,
+    "code": "const lineOf = (sourceFile: ts.SourceFile, node: ts.Node): number =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "aggregateErrorDeclarations",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/error-declarations.ts",
+    "line": 17,
+    "code": "export const aggregateErrorDeclarations = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "PRIMITIVE_MASK",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/errors.ts",
+    "line": 27,
+    "code": "const PRIMITIVE_MASK =",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "lineOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/errors.ts",
+    "line": 37,
+    "code": "const lineOf = (sourceFile: ts.SourceFile, node: ts.Node): number =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "instantiationOf",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/errors.ts",
+    "line": 40,
+    "code": "const instantiationOf = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "collectErrorEntries",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/errors/errors.ts",
+    "line": 48,
+    "code": "export const collectErrorEntries = (files: string[]): ErrorEntry[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "scanFixtureFiles",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/fixture-files/scan-fixture-files.ts",
+    "line": 4,
+    "code": "export const scanFixtureFiles = (files: string[]): ScannedRow[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "hasExportModifier",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/index-files/scan-index-files.ts",
+    "line": 9,
+    "code": "const hasExportModifier = (stmt: ts.Statement): boolean => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isDefinition",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/index-files/scan-index-files.ts",
+    "line": 14,
+    "code": "const isDefinition = (stmt: ts.Statement): boolean =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "countStatements",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/index-files/scan-index-files.ts",
+    "line": 22,
+    "code": "const countStatements = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "scanIndexFiles",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/index-files/scan-index-files.ts",
+    "line": 43,
+    "code": "export const scanIndexFiles = (files: string[]): ScannedRow[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "findDuplicateStringLiterals",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/find-duplicate-string-literals.ts",
+    "line": 3,
+    "code": "export const findDuplicateStringLiterals = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "TEST_AND_BDD_FUNCTIONS",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 8,
+    "code": "const TEST_AND_BDD_FUNCTIONS = new Set([",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "UTILITARY_PREDEFINED_EXCEPTIONS",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 17,
+    "code": "const UTILITARY_PREDEFINED_EXCEPTIONS = new Set(['\\n', '\\\\n', ''])",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isLiteral",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 19,
+    "code": "const isLiteral = (node: ts.Node): node is ts.StringLiteral =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isTestOrBddFunction",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 22,
+    "code": "const isTestOrBddFunction = (name: string): boolean => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isPredefinedException",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 30,
+    "code": "const isPredefinedException = (value: string): boolean =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isDuplicableStringLiteral",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 33,
+    "code": "const isDuplicableStringLiteral = (node: ts.Node): node is ts.StringLiteral =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isDuplicableNamedDeclaration",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 36,
+    "code": "const isDuplicableNamedDeclaration = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "literalValue",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 47,
+    "code": "const literalValue = (node: ts.StringLiteral): string => `'${node.text}'`",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "scanStringLiterals",
+    "kind": "constant",
+    "file": "fyuld-pano/src/assessments/string-literals/scan-string-literals.ts",
+    "line": 49,
+    "code": "export const scanStringLiterals = (files: string[]): ScannedRow[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
     "name": "principleSchema",
     "kind": "constant",
-    "file": "fyuld-pano/src/compile-principle.ts",
+    "file": "fyuld-pano/src/cli/compile-principle.ts",
     "line": 7,
     "code": "const principleSchema = JSON.parse(",
     "package": "fyuld-pano",
@@ -11,7 +362,7 @@
   {
     "name": "compilePrinciple",
     "kind": "constant",
-    "file": "fyuld-pano/src/compile-principle.ts",
+    "file": "fyuld-pano/src/cli/compile-principle.ts",
     "line": 14,
     "code": "export const compilePrinciple = (md: string): Principle =>",
     "package": "fyuld-pano",
@@ -20,7 +371,7 @@
   {
     "name": "setPretty",
     "kind": "constant",
-    "file": "fyuld-pano/src/format.ts",
+    "file": "fyuld-pano/src/cli/format.ts",
     "line": 3,
     "code": "export const setPretty = (b: boolean): void => {",
     "package": "fyuld-pano",
@@ -29,7 +380,7 @@
   {
     "name": "styled",
     "kind": "constant",
-    "file": "fyuld-pano/src/format.ts",
+    "file": "fyuld-pano/src/cli/format.ts",
     "line": 7,
     "code": "export const styled = (codes: string, text: string): string =>",
     "package": "fyuld-pano",
@@ -38,259 +389,16 @@
   {
     "name": "SuperDuper",
     "kind": "constant",
-    "file": "fyuld-pano/src/format.ts",
+    "file": "fyuld-pano/src/cli/format.ts",
     "line": 10,
     "code": "export const SuperDuper = 1",
     "package": "fyuld-pano",
     "language": "typescript"
   },
   {
-    "name": "SuperDuper",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 34,
-    "code": "export const SuperDuper = 2",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "SKIP_DIRS",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 36,
-    "code": "const SKIP_DIRS = new Set(['node_modules', 'dist', '.terraform'])",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "SOURCE_EXTENSIONS",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 37,
-    "code": "const SOURCE_EXTENSIONS = new Set(['.ts'])",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "CONFIG_FILENAME",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 38,
-    "code": "const CONFIG_FILENAME = '.pano/pano.config.json'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "METRICS_DIR",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 39,
-    "code": "const METRICS_DIR = '.metrics'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "OCCURRENCES_DIR",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 40,
-    "code": "const OCCURRENCES_DIR = path.join(METRICS_DIR, '.occurences')",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "FINDINGS_DIR",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 41,
-    "code": "const FINDINGS_DIR = path.join(METRICS_DIR, '.findings')",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "REMARKS_DIR",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 42,
-    "code": "const REMARKS_DIR = path.join(METRICS_DIR, '.remarks')",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "TASKS_DIR",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 43,
-    "code": "const TASKS_DIR = '.tasks'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DefaultSpecsDirectory",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 44,
-    "code": "const DefaultSpecsDirectory = 'specs'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DefaultBddFeaturesDirectory",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 45,
-    "code": "const DefaultBddFeaturesDirectory = 'features'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DefaultStoriesDirectory",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 46,
-    "code": "const DefaultStoriesDirectory = 'stories'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DefaultBddFeatureExtension",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 47,
-    "code": "const DefaultBddFeatureExtension = '.feature'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DefaultPrinciplesDirectory",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 48,
-    "code": "const DefaultPrinciplesDirectory = 'principles'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "DefaultCompiledPrinciplesDirectory",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 49,
-    "code": "const DefaultCompiledPrinciplesDirectory = '.compiled-principles'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "expandGlob",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 51,
-    "code": "const expandGlob = (pattern: string, baseDir: string): string[] => {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "walkSourceFiles",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 82,
-    "code": "const walkSourceFiles = (dir: string, acc: string[] = []): string[] => {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "findConfig",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 97,
-    "code": "const findConfig = (startDir: string): string => {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "loadConfig",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 110,
-    "code": "const loadConfig = (configPath: string): PanOpticumConfig =>",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "resolveFiles",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 113,
-    "code": "const resolveFiles = (",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "runAnalyze",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 130,
-    "code": "const runAnalyze = (",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "runAssess",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 150,
-    "code": "const runAssess = (",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "evaluatePrinciples",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 169,
-    "code": "const evaluatePrinciples = (",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "printHelp",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 238,
-    "code": "const printHelp = (): void => {",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "rawArgs",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 256,
-    "code": "const rawArgs = process.argv.slice(2)",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "positional",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 258,
-    "code": "const positional: string[] = []",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "name": "isGenerateSubcommand",
-    "kind": "constant",
-    "file": "fyuld-pano/src/pano.ts",
-    "line": 271,
-    "code": "const isGenerateSubcommand = subcommand === 'generate' || subcommand === 'gen'",
-    "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
     "name": "principlesCompile",
     "kind": "constant",
-    "file": "fyuld-pano/src/principles-compile.ts",
+    "file": "fyuld-pano/src/cli/principles-compile.ts",
     "line": 12,
     "code": "export const principlesCompile = (",
     "package": "fyuld-pano",
@@ -299,7 +407,7 @@
   {
     "name": "principlesVerify",
     "kind": "constant",
-    "file": "fyuld-pano/src/principles-verify.ts",
+    "file": "fyuld-pano/src/cli/principles-verify.ts",
     "line": 13,
     "code": "export const principlesVerify = (",
     "package": "fyuld-pano",
@@ -308,7 +416,7 @@
   {
     "name": "NOIR_ON_COTTON",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-markdown-ansi.ts",
+    "file": "fyuld-pano/src/cli/render-markdown-ansi.ts",
     "line": 3,
     "code": "const NOIR_ON_COTTON = '30;48;2;245;245;240' // black text, cotton background",
     "package": "fyuld-pano",
@@ -317,7 +425,7 @@
   {
     "name": "HEADING_STYLES",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-markdown-ansi.ts",
+    "file": "fyuld-pano/src/cli/render-markdown-ansi.ts",
     "line": 5,
     "code": "const HEADING_STYLES: Record<number, string> = {",
     "package": "fyuld-pano",
@@ -326,7 +434,7 @@
   {
     "name": "headingToAnsi",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-markdown-ansi.ts",
+    "file": "fyuld-pano/src/cli/render-markdown-ansi.ts",
     "line": 11,
     "code": "const headingToAnsi = (line: string): string | undefined => {",
     "package": "fyuld-pano",
@@ -335,7 +443,7 @@
   {
     "name": "renderMarkdownAsAnsi",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-markdown-ansi.ts",
+    "file": "fyuld-pano/src/cli/render-markdown-ansi.ts",
     "line": 18,
     "code": "export const renderMarkdownAsAnsi = (md: string): void => {",
     "package": "fyuld-pano",
@@ -344,8 +452,8 @@
   {
     "name": "PRINCIPLE_REPORT_SCHEMA",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 5,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 6,
     "code": "const PRINCIPLE_REPORT_SCHEMA: MdSchema = {",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -353,8 +461,8 @@
   {
     "name": "PRINCIPLE_TASK_SCHEMA",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 11,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 12,
     "code": "const PRINCIPLE_TASK_SCHEMA: MdSchema = {",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -362,8 +470,8 @@
   {
     "name": "SCORES_SCHEMA",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 23,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 24,
     "code": "const SCORES_SCHEMA: MdSchema = {",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -371,8 +479,8 @@
   {
     "name": "remarkLine",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 32,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 33,
     "code": "const remarkLine = (remark: ViolationRow): string => {",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -380,8 +488,8 @@
   {
     "name": "renderPrinciple",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 44,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 45,
     "code": "const renderPrinciple = (",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -389,8 +497,8 @@
   {
     "name": "renderScores",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 84,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 88,
     "code": "const renderScores = (",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -398,8 +506,8 @@
   {
     "name": "renderRunReport",
     "kind": "constant",
-    "file": "fyuld-pano/src/render-run-report.ts",
-    "line": 104,
+    "file": "fyuld-pano/src/cli/render-run-report.ts",
+    "line": 108,
     "code": "export const renderRunReport = (",
     "package": "fyuld-pano",
     "language": "typescript"
@@ -407,7 +515,7 @@
   {
     "name": "writeFindings",
     "kind": "constant",
-    "file": "fyuld-pano/src/write-findings.ts",
+    "file": "fyuld-pano/src/cli/write-findings.ts",
     "line": 8,
     "code": "export const writeFindings = (",
     "package": "fyuld-pano",
@@ -416,604 +524,496 @@
   {
     "name": "writeRemarks",
     "kind": "constant",
-    "file": "fyuld-pano/src/write-remarks.ts",
+    "file": "fyuld-pano/src/cli/write-remarks.ts",
     "line": 6,
     "code": "export const writeRemarks = (",
     "package": "fyuld-pano",
     "language": "typescript"
   },
   {
-    "name": "NotApplicable",
-    "kind": "constant",
-    "file": "fyuld-pano-dm/src/entities/common.ts",
-    "line": 1,
-    "code": "export const NotApplicable = 'not-applicable'",
-    "package": "fyuld-pano-dm",
-    "language": "typescript"
-  },
-  {
-    "name": "createErrorUrn",
-    "kind": "constant",
-    "file": "fyuld-pano-dm/src/errors/urns.ts",
-    "line": 7,
-    "code": "export const createErrorUrn = (",
-    "package": "fyuld-pano-dm",
-    "language": "typescript"
-  },
-  {
     "name": "FINDING_SPECS",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/collect-findings.ts",
+    "file": "fyuld-pano/src/collectors/collect-findings.ts",
     "line": 15,
     "code": "const FINDING_SPECS: FindingSpec[] = [",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "collectFindings",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/collect-findings.ts",
+    "file": "fyuld-pano/src/collectors/collect-findings.ts",
     "line": 30,
     "code": "export const collectFindings = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "LANGUAGE_BY_EXT",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/collect-occurrences.ts",
-    "line": 24,
+    "file": "fyuld-pano/src/collectors/collect-occurrences.ts",
+    "line": 21,
     "code": "const LANGUAGE_BY_EXT: Record<string, string> = {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "enrich",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/collect-occurrences.ts",
-    "line": 31,
+    "file": "fyuld-pano/src/collectors/collect-occurrences.ts",
+    "line": 28,
     "code": "const enrich = (rows: ScannedRow[], repoRoot: string): Occurrence[] =>",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "DECLARATION_BUCKETS",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/collect-occurrences.ts",
-    "line": 48,
+    "file": "fyuld-pano/src/collectors/collect-occurrences.ts",
+    "line": 45,
     "code": "const DECLARATION_BUCKETS = [",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "collectOccurrences",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/collect-occurrences.ts",
-    "line": 57,
+    "file": "fyuld-pano/src/collectors/collect-occurrences.ts",
+    "line": 54,
     "code": "export const collectOccurrences = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
-    "name": "findComplexConditionalExpressions",
+    "name": "NotApplicable",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/conditional-expressions/find-complex-conditional-expressions.ts",
-    "line": 3,
-    "code": "export const findComplexConditionalExpressions = (",
-    "package": "fyuld-pano-engine",
+    "file": "fyuld-pano/src/datamodel/entities/common.ts",
+    "line": 1,
+    "code": "export const NotApplicable = 'not-applicable'",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
-    "name": "isLogicalBinaryExpression",
+    "name": "createErrorUrn",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts",
+    "file": "fyuld-pano/src/datamodel/errors/urns.ts",
     "line": 7,
-    "code": "const isLogicalBinaryExpression = (",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "countTerms",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts",
-    "line": 14,
-    "code": "const countTerms = (node: ts.Expression): number => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "scanConditionalExpressions",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts",
-    "line": 24,
-    "code": "export const scanConditionalExpressions = (files: string[]): ScannedRow[] => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "findDuplicateDeclarations",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/duplicate-declarations/find-duplicate-declarations.ts",
-    "line": 3,
-    "code": "export const findDuplicateDeclarations = (",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "lineOf",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts",
-    "line": 16,
-    "code": "const lineOf = (node: ts.Node, sourceFile: ts.SourceFile): number =>",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "codeAt",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts",
-    "line": 19,
-    "code": "const codeAt = (line: number, lines: string[]): string =>",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isAnonymousDeclaration",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts",
-    "line": 22,
-    "code": "const isAnonymousDeclaration = (",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "scanDeclarations",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/duplicate-declarations/scan-declarations.ts",
-    "line": 26,
-    "code": "export const scanDeclarations = (files: string[]): ScannedRow[] => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "scanFixtureFiles",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/fixture-files/scan-fixture-files.ts",
-    "line": 4,
-    "code": "export const scanFixtureFiles = (files: string[]): ScannedRow[] => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "hasExportModifier",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts",
-    "line": 9,
-    "code": "const hasExportModifier = (stmt: ts.Statement): boolean => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isDefinition",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts",
-    "line": 14,
-    "code": "const isDefinition = (stmt: ts.Statement): boolean =>",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "countStatements",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts",
-    "line": 22,
-    "code": "const countStatements = (",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "scanIndexFiles",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/index-files/scan-index-files.ts",
-    "line": 43,
-    "code": "export const scanIndexFiles = (files: string[]): ScannedRow[] => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "findDuplicateStringLiterals",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/find-duplicate-string-literals.ts",
-    "line": 3,
-    "code": "export const findDuplicateStringLiterals = (",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "TEST_AND_BDD_FUNCTIONS",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 8,
-    "code": "const TEST_AND_BDD_FUNCTIONS = new Set([",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "UTILITARY_PREDEFINED_EXCEPTIONS",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 17,
-    "code": "const UTILITARY_PREDEFINED_EXCEPTIONS = new Set(['\\n', '\\\\n', ''])",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isLiteral",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 19,
-    "code": "const isLiteral = (node: ts.Node): node is ts.StringLiteral =>",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isTestOrBddFunction",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 22,
-    "code": "const isTestOrBddFunction = (name: string): boolean => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isPredefinedException",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 30,
-    "code": "const isPredefinedException = (value: string): boolean =>",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isDuplicableStringLiteral",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 33,
-    "code": "const isDuplicableStringLiteral = (node: ts.Node): node is ts.StringLiteral =>",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "isDuplicableNamedDeclaration",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 36,
-    "code": "const isDuplicableNamedDeclaration = (",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "literalValue",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 47,
-    "code": "const literalValue = (node: ts.StringLiteral): string => `'${node.text}'`",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "scanStringLiterals",
-    "kind": "constant",
-    "file": "fyuld-pano-engine/src/assessments/string-literals/scan-string-literals.ts",
-    "line": 49,
-    "code": "export const scanStringLiterals = (files: string[]): ScannedRow[] => {",
-    "package": "fyuld-pano-engine",
+    "code": "export const createErrorUrn = (",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "parseFeature",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/gherkin/parser.ts",
+    "file": "fyuld-pano/src/languages/gherkin/parser.ts",
     "line": 4,
     "code": "export const parseFeature = (source: string): GherkinDocument => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "parseTerraformDeclarations",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/terraform/parser.ts",
+    "file": "fyuld-pano/src/languages/terraform/parser.ts",
     "line": 15,
     "code": "export const parseTerraformDeclarations = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "parseTerraformStringLiterals",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/terraform/parser.ts",
+    "file": "fyuld-pano/src/languages/terraform/parser.ts",
     "line": 64,
     "code": "export const parseTerraformStringLiterals = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "fromRange",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/comments.ts",
+    "file": "fyuld-pano/src/languages/typescript/comments.ts",
     "line": 11,
     "code": "const fromRange = (range: ts.CommentRange, sourceText: string): Comment => ({",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "getLeadingComments",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/comments.ts",
+    "file": "fyuld-pano/src/languages/typescript/comments.ts",
     "line": 22,
     "code": "export const getLeadingComments = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "getTrailingComments",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/comments.ts",
+    "file": "fyuld-pano/src/languages/typescript/comments.ts",
     "line": 30,
     "code": "export const getTrailingComments = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "getAllComments",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/comments.ts",
+    "file": "fyuld-pano/src/languages/typescript/comments.ts",
     "line": 38,
     "code": "export const getAllComments = (sourceFile: ts.SourceFile): Comment[] => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "inferScriptKind",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/parser.ts",
+    "file": "fyuld-pano/src/languages/typescript/parser.ts",
     "line": 3,
     "code": "const inferScriptKind = (fileName: string): ts.ScriptKind => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "parseTypeScript",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/parser.ts",
+    "file": "fyuld-pano/src/languages/typescript/parser.ts",
     "line": 10,
     "code": "export const parseTypeScript = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "getSyntacticErrors",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/parser.ts",
+    "file": "fyuld-pano/src/languages/typescript/parser.ts",
     "line": 22,
     "code": "export const getSyntacticErrors = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "countCodeLines",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/languages/typescript/parser.ts",
+    "file": "fyuld-pano/src/languages/typescript/parser.ts",
     "line": 28,
     "code": "export const countCodeLines = (sourceFile: ts.SourceFile): number => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "SuperDuper",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 35,
+    "code": "export const SuperDuper = 2",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "SKIP_DIRS",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 37,
+    "code": "const SKIP_DIRS = new Set(['node_modules', 'dist', '.terraform'])",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "SOURCE_EXTENSIONS",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 38,
+    "code": "const SOURCE_EXTENSIONS = new Set(['.ts'])",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "CONFIG_FILENAME",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 39,
+    "code": "const CONFIG_FILENAME = '.pano/pano.config.json'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "METRICS_DIR",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 40,
+    "code": "const METRICS_DIR = '.metrics'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "OCCURRENCES_DIR",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 41,
+    "code": "const OCCURRENCES_DIR = path.join(METRICS_DIR, '.occurences')",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "FINDINGS_DIR",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 42,
+    "code": "const FINDINGS_DIR = path.join(METRICS_DIR, '.findings')",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "REMARKS_DIR",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 43,
+    "code": "const REMARKS_DIR = path.join(METRICS_DIR, '.remarks')",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "TASKS_DIR",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 44,
+    "code": "const TASKS_DIR = '.tasks'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DefaultSpecsDirectory",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 45,
+    "code": "const DefaultSpecsDirectory = 'specs'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DefaultBddFeaturesDirectory",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 46,
+    "code": "const DefaultBddFeaturesDirectory = 'features'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DefaultStoriesDirectory",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 47,
+    "code": "const DefaultStoriesDirectory = 'stories'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DefaultBddFeatureExtension",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 48,
+    "code": "const DefaultBddFeatureExtension = '.feature'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DefaultPrinciplesDirectory",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 49,
+    "code": "const DefaultPrinciplesDirectory = 'principles'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "DefaultCompiledPrinciplesDirectory",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 50,
+    "code": "const DefaultCompiledPrinciplesDirectory = '.compiled-principles'",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "expandGlob",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 52,
+    "code": "const expandGlob = (pattern: string, baseDir: string): string[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "walkSourceFiles",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 83,
+    "code": "const walkSourceFiles = (dir: string, acc: string[] = []): string[] => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "findConfig",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 98,
+    "code": "const findConfig = (startDir: string): string => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "loadConfig",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 111,
+    "code": "const loadConfig = (configPath: string): PanOpticumConfig =>",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "resolveFiles",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 114,
+    "code": "const resolveFiles = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "runAnalyze",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 131,
+    "code": "const runAnalyze = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "runAssess",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 151,
+    "code": "const runAssess = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "evaluatePrinciples",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 170,
+    "code": "const evaluatePrinciples = (",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "printHelp",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 239,
+    "code": "const printHelp = (): void => {",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "rawArgs",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 257,
+    "code": "const rawArgs = process.argv.slice(2)",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "positional",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 259,
+    "code": "const positional: string[] = []",
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "name": "isGenerateSubcommand",
+    "kind": "constant",
+    "file": "fyuld-pano/src/pano.ts",
+    "line": 272,
+    "code": "const isGenerateSubcommand = subcommand === 'generate' || subcommand === 'gen'",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "evaluateConstraint",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/principles/evaluate-constraint.ts",
+    "file": "fyuld-pano/src/principles/evaluate-constraint.ts",
     "line": 3,
     "code": "export const evaluateConstraint = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "remarksOf",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/principles/render-remarks.ts",
+    "file": "fyuld-pano/src/principles/render-remarks.ts",
     "line": 4,
     "code": "export const remarksOf = (verdicts: PrincipleVerdict[]): Remark[] =>",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "runPrinciples",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/principles/run-principles.ts",
+    "file": "fyuld-pano/src/principles/run-principles.ts",
     "line": 11,
     "code": "export const runPrinciples = (",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "renderCsv",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/render/render-csv.ts",
+    "file": "fyuld-pano/src/render/render-csv.ts",
     "line": 4,
     "code": "export const renderCsv = (rows: Finding[]): string => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "cell",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/render/render-helpers.ts",
+    "file": "fyuld-pano/src/render/render-helpers.ts",
     "line": 4,
     "code": "export const cell = (value: unknown): string => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "columns",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/render/render-helpers.ts",
+    "file": "fyuld-pano/src/render/render-helpers.ts",
     "line": 10,
     "code": "export const columns = (rows: Finding[]): string[] => {",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "renderJson",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/render/render-json.ts",
+    "file": "fyuld-pano/src/render/render-json.ts",
     "line": 3,
     "code": "export const renderJson = (rows: Finding[]): string =>",
-    "package": "fyuld-pano-engine",
+    "package": "fyuld-pano",
     "language": "typescript"
   },
   {
     "name": "renderMd",
     "kind": "constant",
-    "file": "fyuld-pano-engine/src/render/render-md.ts",
+    "file": "fyuld-pano/src/render/render-md.ts",
     "line": 4,
     "code": "export const renderMd = (rows: Finding[]): string => {",
-    "package": "fyuld-pano-engine",
-    "language": "typescript"
-  },
-  {
-    "name": "aggregateErrors",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/aggregateErrors.ts",
-    "line": 3,
-    "code": "export const aggregateErrors = (files: string[]) =>",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "aggregateThrows",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/aggregateThrows.ts",
-    "line": 3,
-    "code": "export const aggregateThrows = (files: string[]) =>",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "lineOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/class-constructors.ts",
-    "line": 21,
-    "code": "const lineOf = (ast: ts.SourceFile, node: ts.Node): number =>",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "baseNameOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/class-constructors.ts",
-    "line": 24,
-    "code": "const baseNameOf = (expression: ts.Expression): string | undefined => {",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "extendsNameOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/class-constructors.ts",
-    "line": 30,
-    "code": "const extendsNameOf = (node: ts.ClassDeclaration): string | undefined => {",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "accessorOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/class-constructors.ts",
-    "line": 38,
-    "code": "const accessorOf = (node: ts.ClassDeclaration): ClassConstructorAccessor => {",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "categoryOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/class-constructors.ts",
-    "line": 47,
-    "code": "const categoryOf = (",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "collectClassConstructors",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/class-constructors.ts",
-    "line": 62,
-    "code": "export const collectClassConstructors = (",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "nameLooksLikeError",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/error-declarations.ts",
-    "line": 12,
-    "code": "const nameLooksLikeError = (name: string): boolean => name.endsWith(\"Error\");",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "lineOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/error-declarations.ts",
-    "line": 14,
-    "code": "const lineOf = (sourceFile: ts.SourceFile, node: ts.Node): number =>",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "aggregateErrorDeclarations",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/error-declarations.ts",
-    "line": 17,
-    "code": "export const aggregateErrorDeclarations = (",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "PRIMITIVE_MASK",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/errors.ts",
-    "line": 27,
-    "code": "const PRIMITIVE_MASK =",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "lineOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/errors.ts",
-    "line": 37,
-    "code": "const lineOf = (sourceFile: ts.SourceFile, node: ts.Node): number =>",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "instantiationOf",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/errors.ts",
-    "line": 40,
-    "code": "const instantiationOf = (",
-    "package": "fyuld-pano-errors",
-    "language": "typescript"
-  },
-  {
-    "name": "collectErrorEntries",
-    "kind": "constant",
-    "file": "fyuld-pano-errors/src/errors.ts",
-    "line": 48,
-    "code": "export const collectErrorEntries = (files: string[]): ErrorEntry[] => {",
-    "package": "fyuld-pano-errors",
+    "package": "fyuld-pano",
     "language": "typescript"
   }
 ]

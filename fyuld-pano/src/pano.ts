@@ -6,25 +6,26 @@ import {
   parseTypeScript,
   getAllComments,
   countCodeLines,
+} from './languages/typescript'
+import {
   collectOccurrences,
-  collectFindings,
   OccurrenceBucket,
-  FindingBucket,
-  runPrinciples,
-  remarksOf,
-} from '@fyuld/pano-engine'
-import { principlesCompile } from './principles-compile'
-import { principlesVerify } from './principles-verify'
-import { renderRunReport } from './render-run-report'
-import { ConfigError } from './config-error'
-import { writeFindings } from './write-findings'
-import { writeRemarks } from './write-remarks'
-import { setPretty } from './format'
-import { renderMarkdownAsAnsi } from './render-markdown-ansi'
-import { generateBddStepsForUx } from '@fyuld/pano-bdd'
-import { PanOpticumConfig, Principle, FileExtension } from '@fyuld/pano-dm'
+} from './collectors/collect-occurrences'
+import { collectFindings, FindingBucket } from './collectors/collect-findings'
+import { runPrinciples } from './principles/run-principles'
+import { remarksOf } from './principles/render-remarks'
+import { principlesCompile } from './cli/principles-compile'
+import { principlesVerify } from './cli/principles-verify'
+import { renderRunReport } from './cli/render-run-report'
+import { ConfigError } from './cli/config-error'
+import { writeFindings } from './cli/write-findings'
+import { writeRemarks } from './cli/write-remarks'
+import { setPretty } from './cli/format'
+import { renderMarkdownAsAnsi } from './cli/render-markdown-ansi'
+import { generateBddStepsForUx } from './bdd'
+import { PanOpticumConfig, Principle, FileExtension } from './datamodel'
 import { FileFormat, FyuldError } from '@fyuld/ldm'
-import { safelyOverwriteFile } from './safely-overwrite-file'
+import { safelyOverwriteFile } from './cli/safely-overwrite-file'
 
 process.on('uncaughtException', (error) => {
   console.error(error instanceof FyuldError ? error.toMdString() : error)

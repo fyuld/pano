@@ -1,24 +1,32 @@
 value,name,type,length,usage,file,line,code,package,language,numUsed
-' ',lastIndexOf,string,1,function,fyuld-pano/src/render-markdown-ansi.ts,84,const lastSpace = rest.lastIndexOf(' '),fyuld-pano,typescript,2
-' ',replace,string,1,function,fyuld-pano/src/render-run-report.ts,39,const content = raw.replace(/\s+/g, ' ').trim(),fyuld-pano,typescript,2
-' | ',join,string,3,function,fyuld-pano-engine/src/render/render-md.ts,8,`| ${cols.join(' | ')} |`,,fyuld-pano-engine,typescript,3
-' | ',join,string,3,function,fyuld-pano-engine/src/render/render-md.ts,9,`| ${cols.map(() => '---').join(' | ')} |`,,fyuld-pano-engine,typescript,3
-' | ',join,string,3,function,fyuld-pano-engine/src/render/render-md.ts,10,...rows.map((row) => `| ${cols.map((c) => cell(row[c])).join(' | ')} |`),,fyuld-pano-engine,typescript,3
-',',split,string,1,function,fyuld-pano/src/pano.ts,433,.split(','),fyuld-pano,typescript,4
-',',join,string,1,function,fyuld-pano/src/pano.ts,432,.join(','),fyuld-pano,typescript,4
-',',join,string,1,function,fyuld-pano-engine/src/render/render-csv.ts,8,cols.join(','),,fyuld-pano-engine,typescript,4
-',',join,string,1,function,fyuld-pano-engine/src/render/render-csv.ts,9,...rows.map((row) => cols.map((c) => cell(row[c])).join(',')),,fyuld-pano-engine,typescript,4
-':**',includes,string,3,function,fyuld-pano/src/render-markdown-ansi.ts,55,const isBoldKeyValueLine = line.startsWith('**') && line.includes(':**'),fyuld-pano,typescript,2
-':**',indexOf,string,3,function,fyuld-pano/src/render-markdown-ansi.ts,57,const colonIdx = line.indexOf(':**'),fyuld-pano,typescript,2
-'.ts',endsWith,string,3,function,fyuld-pano/src/pano.ts,296,if (!file.endsWith('.ts')) continue,fyuld-pano,typescript,5
-'.ts',endsWith,string,3,function,fyuld-pano/src/pano.ts,363,} else if (inputPath.endsWith('.ts')) {,fyuld-pano,typescript,5
-'.ts',basename,string,3,function,fyuld-pano/src/pano.ts,364,const base = path.basename(inputPath, '.ts'),fyuld-pano,typescript,5
-'.ts',endsWith,string,3,function,fyuld-pano-engine/src/assessments/collect-occurrences.ts,62,.filter((file) => file.endsWith('.ts')),fyuld-pano-engine,typescript,5
-'.ts',endsWith,string,3,function,fyuld-pano-engine/src/assessments/conditional-expressions/scan-conditional-expressions.ts,28,if (!file.endsWith('.ts')) continue,fyuld-pano-engine,typescript,5
-'/',split,string,1,function,fyuld-pano/src/pano.ts,52,const parts = pattern.split('/'),fyuld-pano,typescript,2
-'/',split,string,1,function,fyuld-pano-engine/src/assessments/collect-occurrences.ts,35,const pkg = typeof rel === 'string' ? (rel.split('/')[0] ?? '') : '',fyuld-pano-engine,typescript,2
-'=',indexOf,string,1,function,fyuld-pano/src/pano.ts,261,const name = a.indexOf('=') >= 0 ? a.slice(2, a.indexOf('=')) : a.slice(2),fyuld-pano,typescript,2
-'=',indexOf,string,1,function,fyuld-pano/src/pano.ts,261,const name = a.indexOf('=') >= 0 ? a.slice(2, a.indexOf('=')) : a.slice(2),fyuld-pano,typescript,2
-'1',styled,string,1,function,fyuld-pano/src/render-markdown-ansi.ts,61,console.log(`  ${styled('1', key + ':')}`),fyuld-pano,typescript,3
-'1',styled,string,1,function,fyuld-pano/src/render-markdown-ansi.ts,69,console.log(`  ${styled('1', 'Remarks:')}`),fyuld-pano,typescript,3
-'1',styled,string,1,function,fyuld-pano/src/render-markdown-ansi.ts,89,const boldId = styled('1', id) + '  ',fyuld-pano,typescript,3
+'
+
+',join,string,2,function,fyuld-pano/src/cli/render-run-report.ts,77,.join('\n\n'),fyuld-pano,typescript,2
+'
+
+',join,string,2,function,fyuld-pano/src/cli/render-run-report.ts,140,return blocks.join('\n\n') + '\n',fyuld-pano,typescript,2
+' ',lastIndexOf,string,1,function,fyuld-pano/src/cli/render-markdown-ansi.ts,84,const lastSpace = rest.lastIndexOf(' '),fyuld-pano,typescript,2
+' ',replace,string,1,function,fyuld-pano/src/cli/render-run-report.ts,40,const content = raw.replace(/\s+/g, ' ').trim(),fyuld-pano,typescript,2
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,8,`| ${cols.join(' | ')} |`,,fyuld-pano,typescript,3
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,9,`| ${cols.map(() => '---').join(' | ')} |`,,fyuld-pano,typescript,3
+' | ',join,string,3,function,fyuld-pano/src/render/render-md.ts,10,...rows.map((row) => `| ${cols.map((c) => cell(row[c])).join(' | ')} |`),,fyuld-pano,typescript,3
+',',split,string,1,function,fyuld-pano/src/pano.ts,434,.split(','),fyuld-pano,typescript,4
+',',join,string,1,function,fyuld-pano/src/pano.ts,433,.join(','),fyuld-pano,typescript,4
+',',join,string,1,function,fyuld-pano/src/render/render-csv.ts,8,cols.join(','),,fyuld-pano,typescript,4
+',',join,string,1,function,fyuld-pano/src/render/render-csv.ts,9,...rows.map((row) => cols.map((c) => cell(row[c])).join(',')),,fyuld-pano,typescript,4
+':**',includes,string,3,function,fyuld-pano/src/cli/render-markdown-ansi.ts,55,const isBoldKeyValueLine = line.startsWith('**') && line.includes(':**'),fyuld-pano,typescript,2
+':**',indexOf,string,3,function,fyuld-pano/src/cli/render-markdown-ansi.ts,57,const colonIdx = line.indexOf(':**'),fyuld-pano,typescript,2
+'..',join,string,2,function,fyuld-pano/src/cli/compile-principle.ts,9,path.join(__dirname, '..', '..', 'schemas', 'principle.mdschema.json'),,fyuld-pano,typescript,2
+'..',join,string,2,function,fyuld-pano/src/cli/compile-principle.ts,9,path.join(__dirname, '..', '..', 'schemas', 'principle.mdschema.json'),,fyuld-pano,typescript,2
+'.ts',endsWith,string,3,function,fyuld-pano/src/assessments/conditional-expressions/scan-conditional-expressions.ts,28,if (!file.endsWith('.ts')) continue,fyuld-pano,typescript,5
+'.ts',endsWith,string,3,function,fyuld-pano/src/collectors/collect-occurrences.ts,59,.filter((file) => file.endsWith('.ts')),fyuld-pano,typescript,5
+'.ts',endsWith,string,3,function,fyuld-pano/src/pano.ts,297,if (!file.endsWith('.ts')) continue,fyuld-pano,typescript,5
+'.ts',endsWith,string,3,function,fyuld-pano/src/pano.ts,364,} else if (inputPath.endsWith('.ts')) {,fyuld-pano,typescript,5
+'.ts',basename,string,3,function,fyuld-pano/src/pano.ts,365,const base = path.basename(inputPath, '.ts'),fyuld-pano,typescript,5
+'/',split,string,1,function,fyuld-pano/src/collectors/collect-occurrences.ts,32,const pkg = typeof rel === 'string' ? (rel.split('/')[0] ?? '') : '',fyuld-pano,typescript,2
+'/',split,string,1,function,fyuld-pano/src/pano.ts,53,const parts = pattern.split('/'),fyuld-pano,typescript,2
+'=',indexOf,string,1,function,fyuld-pano/src/pano.ts,262,const name = a.indexOf('=') >= 0 ? a.slice(2, a.indexOf('=')) : a.slice(2),fyuld-pano,typescript,2
+'=',indexOf,string,1,function,fyuld-pano/src/pano.ts,262,const name = a.indexOf('=') >= 0 ? a.slice(2, a.indexOf('=')) : a.slice(2),fyuld-pano,typescript,2
+'1',styled,string,1,function,fyuld-pano/src/cli/render-markdown-ansi.ts,61,console.log(`  ${styled('1', key + ':')}`),fyuld-pano,typescript,3
+'1',styled,string,1,function,fyuld-pano/src/cli/render-markdown-ansi.ts,69,console.log(`  ${styled('1', 'Remarks:')}`),fyuld-pano,typescript,3
+'1',styled,string,1,function,fyuld-pano/src/cli/render-markdown-ansi.ts,89,const boldId = styled('1', id) + '  ',fyuld-pano,typescript,3

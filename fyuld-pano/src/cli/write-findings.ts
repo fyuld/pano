@@ -1,8 +1,8 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { PlainTextFileFormats } from '@fyuld/ldm'
-import { Finding } from '@fyuld/pano-dm'
-import { renderJson, renderCsv } from '@fyuld/pano-engine'
+import { Finding } from '../datamodel'
+import { renderJson, renderCsv } from '../render'
 import { FindingError } from './finding-error'
 
 export const writeFindings = (

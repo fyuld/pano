@@ -1,3 +1,3 @@
-import { Finding } from '@fyuld/pano-dm'
+import { Finding } from '../datamodel'
 
 export type ViolationRow = Finding

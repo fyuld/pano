@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { Remark } from '@fyuld/pano-dm'
-import { renderJson, renderCsv } from '@fyuld/pano-engine'
+import { Remark } from '../datamodel'
+import { renderJson, renderCsv } from '../render'
 
 export const writeRemarks = (
   remarks: Remark[],

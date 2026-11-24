@@ -1,7 +1,35 @@
 [
   {
+    "label": "PanoError",
+    "file": "fyuld-pano/src/datamodel/errors/pano-error.ts",
+    "line": 4,
+    "reasons": [
+      "error-postfix",
+      "extends-error",
+      "thrown"
+    ],
+    "inheritancePath": [
+      "PanoError",
+      "FyuldError",
+      "Error"
+    ],
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
+    "label": "DeclaredError",
+    "file": "fyuld-pano/src/assessments/errors/error-declarations.ts",
+    "line": 5,
+    "reasons": [
+      "error-postfix"
+    ],
+    "inheritancePath": [],
+    "package": "fyuld-pano",
+    "language": "typescript"
+  },
+  {
     "label": "ConfigError",
-    "file": "fyuld-pano/src/config-error.ts",
+    "file": "fyuld-pano/src/cli/config-error.ts",
     "line": 3,
     "reasons": [
       "error-postfix",
@@ -18,7 +46,7 @@
   },
   {
     "label": "FindingError",
-    "file": "fyuld-pano/src/finding-error.ts",
+    "file": "fyuld-pano/src/cli/finding-error.ts",
     "line": 3,
     "reasons": [
       "error-postfix",
@@ -31,34 +59,6 @@
       "Error"
     ],
     "package": "fyuld-pano",
-    "language": "typescript"
-  },
-  {
-    "label": "PanoError",
-    "file": "fyuld-pano-dm/src/errors/pano-error.ts",
-    "line": 4,
-    "reasons": [
-      "error-postfix",
-      "extends-error",
-      "thrown"
-    ],
-    "inheritancePath": [
-      "PanoError",
-      "FyuldError",
-      "Error"
-    ],
-    "package": "fyuld-pano-dm",
-    "language": "typescript"
-  },
-  {
-    "label": "DeclaredError",
-    "file": "fyuld-pano-errors/src/error-declarations.ts",
-    "line": 5,
-    "reasons": [
-      "error-postfix"
-    ],
-    "inheritancePath": [],
-    "package": "fyuld-pano-errors",
     "language": "typescript"
   }
 ]

@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { compilePrinciple } from './compile-principle'
 import { FileFormat } from '@fyuld/ldm'
-import { FileExtension } from '@fyuld/pano-dm'
+import { FileExtension } from '../datamodel'
 
 export type PrincipleValidation = {
   file: string

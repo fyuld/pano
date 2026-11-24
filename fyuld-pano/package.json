@@ -13,8 +13,6 @@
   },
   "scripts": {
     "build": "npm run clean && npm run checks && npm run tsc",
-    "prepack": "node scripts/bundle-deps.js stage",
-    "postpack": "node scripts/bundle-deps.js clean",
     "pano": "ts-node src/pano.ts run",
     "pub": "npm run build && npm publish",
     "tsc": "tsc",
@@ -40,7 +38,7 @@
     "jest-cucumber": "^4.5.0",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
-    "ts-jest": "^29.4.2",
+    "ts-jest": "^29.4.9",
     "typescript": "^6.0.3"
   },
   "files": [
@@ -48,18 +46,11 @@
     "schemas"
   ],
   "dependencies": {
+    "@cucumber/gherkin": "^30.0.0",
+    "@cucumber/messages": "^27.0.0",
     "@fyuld/ldm": "^0.9.0",
     "@fyuld/mdad": "^0.9.0",
-    "@fyuld/pano-bdd": "^0.1.2",
-    "@fyuld/pano-dm": "^0.5.0",
-    "@fyuld/pano-engine": "^0.1.9",
     "jsonpath-plus": "^10.0.0",
     "typescript": "^6.0.3"
-  },
-  "bundledDependencies": [
-    "@fyuld/pano-bdd",
-    "@fyuld/pano-dm",
-    "@fyuld/pano-engine",
-    "@fyuld/pano-errors"
-  ]
+  }
 }

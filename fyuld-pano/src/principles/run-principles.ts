@@ -1,5 +1,5 @@
 import { evaluateConstraint } from './evaluate-constraint'
-import { Principle } from '@fyuld/pano-dm'
+import { Principle } from '../datamodel'
 import { ViolationRow } from './violation-to-be-renamed-to-remark'
 
 export type PrincipleVerdict = {

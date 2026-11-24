@@ -1,4 +1,4 @@
 name,kind,file,line,code,package,language
-ConfigError,class,fyuld-pano/src/config-error.ts,3,export class ConfigError extends FyuldError {,fyuld-pano,typescript
-FindingError,class,fyuld-pano/src/finding-error.ts,3,export class FindingError extends FyuldError {,fyuld-pano,typescript
-PanoError,class,fyuld-pano-dm/src/errors/pano-error.ts,4,export class PanoError extends FyuldError {,fyuld-pano-dm,typescript
+ConfigError,class,fyuld-pano/src/cli/config-error.ts,3,export class ConfigError extends FyuldError {,fyuld-pano,typescript
+FindingError,class,fyuld-pano/src/cli/finding-error.ts,3,export class FindingError extends FyuldError {,fyuld-pano,typescript
+PanoError,class,fyuld-pano/src/datamodel/errors/pano-error.ts,4,export class PanoError extends FyuldError {,fyuld-pano,typescript

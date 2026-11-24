@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import { compilePrinciple } from './compile-principle'
-import { Principle, FileExtension } from '@fyuld/pano-dm'
+import { Principle, FileExtension } from '../datamodel'
 import { FileFormat } from '@fyuld/ldm'
 
 export type CompiledPrinciple = {
